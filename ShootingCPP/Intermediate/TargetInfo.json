@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ShootingCPP",
+			"Path": "C:\\Users\\r283\\Desktop\\Github\\UnrealPractice\\ShootingCPP\\Source\\ShootingCPP.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ShootingCPPEditor",
+			"Path": "C:\\Users\\r283\\Desktop\\Github\\UnrealPractice\\ShootingCPP\\Source\\ShootingCPPEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
