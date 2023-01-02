@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ShootingCPP.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{8B9D8E11-2BAE-492C-AC64-EC1865E48E59}</UniqueIdentifier>
+      <UniqueIdentifier>{C051BA59-DD2C-4A9C-9EEB-CD93367E54C6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ShootingCPP.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{5234F128-8645-4197-926B-29D5B03CEA10}</UniqueIdentifier>
+      <UniqueIdentifier>{B6AA403A-F824-4918-AD7F-F62ABD0CAF2E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,7 +24,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ShootingCPP">
-      <UniqueIdentifier>{9D7B04AA-393F-489F-8212-1B79C8D858A1}</UniqueIdentifier>
+      <UniqueIdentifier>{E3126758-6F00-468D-9679-004F27C4BB72}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ShootingCPP\ShootingCPP.Build.cs">
       <Filter>Source\ShootingCPP</Filter>
@@ -42,14 +42,20 @@
       <Filter>Source\ShootingCPP</Filter>
     </ClInclude>
     <Filter Include="Source\ShootingCPP\Private">
-      <UniqueIdentifier>{A2071A84-45BB-46E7-849D-E68DBBA9EDAE}</UniqueIdentifier>
+      <UniqueIdentifier>{E879188F-1C79-4AAA-B9FA-1DDDACC62C3F}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\ShootingCPP\Private\AccessTest.cpp">
+      <Filter>Source\ShootingCPP\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\ShootingCPP\Private\CodingTestActor.cpp">
       <Filter>Source\ShootingCPP\Private</Filter>
     </ClCompile>
     <Filter Include="Source\ShootingCPP\Public">
-      <UniqueIdentifier>{7D2D0EC0-2F2D-472F-B380-63014F0C2DDB}</UniqueIdentifier>
+      <UniqueIdentifier>{F13B525A-1867-4ED8-80F2-236D2B3EA33F}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\ShootingCPP\Public\AccessTest.h">
+      <Filter>Source\ShootingCPP\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\ShootingCPP\Public\CodingTestActor.h">
       <Filter>Source\ShootingCPP\Public</Filter>
     </ClInclude>

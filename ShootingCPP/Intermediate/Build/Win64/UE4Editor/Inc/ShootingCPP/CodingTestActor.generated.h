@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define SHOOTINGCPP_CodingTestActor_generated_h
 
 #define ShootingCPP_Source_ShootingCPP_Public_CodingTestActor_h_12_SPARSE_DATA
-#define ShootingCPP_Source_ShootingCPP_Public_CodingTestActor_h_12_RPC_WRAPPERS
-#define ShootingCPP_Source_ShootingCPP_Public_CodingTestActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define ShootingCPP_Source_ShootingCPP_Public_CodingTestActor_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execAdd);
+
+
+#define ShootingCPP_Source_ShootingCPP_Public_CodingTestActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execAdd);
+
+
 #define ShootingCPP_Source_ShootingCPP_Public_CodingTestActor_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACodingTestActor(); \

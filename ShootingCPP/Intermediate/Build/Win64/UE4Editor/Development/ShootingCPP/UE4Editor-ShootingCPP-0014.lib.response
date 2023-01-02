@@ -1,0 +1,17 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-ShootingCPP-0014.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\ShootingCPPEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\CodingTestActor.cpp.obj"
+"C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\ShootingCPP.cpp.obj"
+"C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\ShootingCPPGameModeBase.cpp.obj"
+"C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\CodingTestActor.gen.cpp.obj"
+"C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\ShootingCPP.init.gen.cpp.obj"
+"C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\ShootingCPPGameModeBase.gen.cpp.obj"
+"C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\Default.rc2.res"
+/OUT:"C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\UE4Editor-ShootingCPP-0014.lib"
