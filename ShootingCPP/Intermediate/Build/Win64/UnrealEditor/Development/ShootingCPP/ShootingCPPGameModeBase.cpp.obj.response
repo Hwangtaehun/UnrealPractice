@@ -1,9 +1,7 @@
 C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Source\ShootingCPP\ShootingCPPGameModeBase.cpp
 /I .
-/I C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Source\ShootingCPP\Private
 /I C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UnrealEditor\Inc\ShootingCPP\UHT
 /I C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Source
-/I C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Source\ShootingCPP\Public
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
