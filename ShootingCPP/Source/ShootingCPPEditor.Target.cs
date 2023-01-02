@@ -9,7 +9,6 @@ public class ShootingCPPEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
-		ExtraModuleNames.Add("ShootingCPP");
+		ExtraModuleNames.AddRange( new string[] { "ShootingCPP" } );
 	}
 }

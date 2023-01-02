@@ -9,7 +9,6 @@ public class ShootingCPPTarget : TargetRules
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
-		ExtraModuleNames.Add("ShootingCPP");
+		ExtraModuleNames.AddRange( new string[] { "ShootingCPP" } );
 	}
 }
