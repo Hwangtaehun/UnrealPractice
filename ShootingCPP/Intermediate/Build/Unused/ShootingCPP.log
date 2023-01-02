@@ -1,0 +1,5 @@
+﻿  Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" ShootingCPPEditor Win64 Development -Project="C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\ShootingCPP.uproject" -WaitMutex -FromMsBuild
+  Log file: C:\Users\r283\AppData\Local\UnrealBuildTool\Log.txt
+  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\r283\Desktop\Github\UnrealPractice).
+  Unable to build while Live Coding is active. Exit the editor and game, or press Ctrl+Alt+F11 if iterating on code in the editor or game
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(45,5): error MSB3073: ""C:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ShootingCPPEditor Win64 Development -Project="C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\ShootingCPP.uproject" -WaitMutex -FromMsBuild" 명령이 종료되었습니다(코드: 6).

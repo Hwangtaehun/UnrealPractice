@@ -1,0 +1,15 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\r283\\desktop\\github\\unrealpractice\\shootingcpp\\source\\shootingcpp\\private\\codingtestactor.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\r283\\desktop\\github\\unrealpractice\\shootingcpp\\intermediate\\build\\win64\\shootingcppeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\r283\\desktop\\github\\unrealpractice\\shootingcpp\\intermediate\\build\\win64\\unrealeditor\\development\\shootingcpp\\definitions.shootingcpp.h",
+            "c:\\users\\r283\\desktop\\github\\unrealpractice\\shootingcpp\\source\\shootingcpp\\public\\codingtestactor.h",
+            "c:\\users\\r283\\desktop\\github\\unrealpractice\\shootingcpp\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingcpp\\uht\\codingtestactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
