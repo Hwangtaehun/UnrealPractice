@@ -63,29 +63,23 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::NewProp_boxComp_MetaData[] = {
 		{ "Category", "PlayerPawn" },
-		{ "Comment", "// ?\xda\xbd? ?\xe6\xb5\xb9\xc3\xbc ??????\xc6\xae\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/PlayerPawn.h" },
-		{ "ToolTip", "?\xda\xbd? ?\xe6\xb5\xb9\xc3\xbc ??????\xc6\xae" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_boxComp = { "boxComp", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerPawn, boxComp), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerPawn_Statics::NewProp_boxComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_boxComp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::NewProp_meshComp_MetaData[] = {
 		{ "Category", "PlayerPawn" },
-		{ "Comment", "// ????\xc6\xbd ?\xde\xbd? ??????\xc6\xae\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/PlayerPawn.h" },
-		{ "ToolTip", "????\xc6\xbd ?\xde\xbd? ??????\xc6\xae" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_meshComp = { "meshComp", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerPawn, meshComp), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerPawn_Statics::NewProp_meshComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_meshComp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::NewProp_moveSpeed_MetaData[] = {
 		{ "Category", "PlayerPawn" },
-		{ "Comment", "// ?\xd3\xb7? ????\n" },
 		{ "ModuleRelativePath", "Public/PlayerPawn.h" },
-		{ "ToolTip", "?\xd3\xb7? ????" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_moveSpeed = { "moveSpeed", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerPawn, moveSpeed), METADATA_PARAMS(Z_Construct_UClass_APlayerPawn_Statics::NewProp_moveSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_moveSpeed_MetaData)) };
@@ -121,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayerPawn, 3710826785);
+	IMPLEMENT_CLASS(APlayerPawn, 2893359948);
 	template<> SHOOTINGCPP_API UClass* StaticClass<APlayerPawn>()
 	{
 		return APlayerPawn::StaticClass();
