@@ -4,6 +4,8 @@
 #include "PlayerPawn.h"
 #include "Components/BoxComponent.h"
 #include "Components/StaticMeshComponent.h"
+#include "Components/ArrowComponent.h"
+#include "Bullet.h"
 
 // Sets default values
 APlayerPawn::APlayerPawn()
@@ -18,6 +20,9 @@ APlayerPawn::APlayerPawn()
 
 	FVector boxSize = FVector(50.0f, 50.0f, 50.0f);
 	boxComp->SetBoxExtent(boxSize);
+
+	firePostion = CreateDefaultSubobject<UArrowComponent>(TEXT("Fire Position"));
+	firePostion->SetupAttachment(boxComp);
 }
 
 // Called when the game starts or when spawned
@@ -45,6 +50,8 @@ void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 	PlayerInputComponent->BindAxis("Horizontal", this, &APlayerPawn::MoveHorizontal);
 	PlayerInputComponent->BindAxis("Vertical", this, &APlayerPawn::MoveVertical);
+
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APlayerPawn::Fire);
 }
 
 void APlayerPawn::MoveHorizontal(float value)
@@ -55,4 +62,9 @@ void APlayerPawn::MoveHorizontal(float value)
 void APlayerPawn::MoveVertical(float value)
 {
 	v = value;
+}
+
+void APlayerPawn::Fire()
+{
+	ABullet* bullet = GetWorld()->SpawnActor<ABullet>(bulletFactory, firePostion->GetComponentLocation(), firePostion->GetComponentRotation());
 }

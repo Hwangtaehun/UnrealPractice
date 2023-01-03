@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ShootingCPP.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2709D3E5-754B-4400-AE64-4781B5389DCF}</UniqueIdentifier>
+      <UniqueIdentifier>{C0131F18-5527-4E56-BC78-7144FEFA2C6F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ShootingCPP.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{F20507A6-3258-4CDD-96C2-A87E00ACAE87}</UniqueIdentifier>
+      <UniqueIdentifier>{51A402DA-7295-45F5-AE47-C280C17FADA1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,8 +23,11 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\ShootingCPP">
-      <UniqueIdentifier>{AD31587D-C255-4893-A980-305191594208}</UniqueIdentifier>
+      <UniqueIdentifier>{8CBE67BE-9BFC-4B65-976F-E9EEE7A6871B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ShootingCPP\ShootingCPP.Build.cs">
       <Filter>Source\ShootingCPP</Filter>
@@ -42,9 +45,12 @@
       <Filter>Source\ShootingCPP</Filter>
     </ClInclude>
     <Filter Include="Source\ShootingCPP\Private">
-      <UniqueIdentifier>{81D30EB4-E86B-4CFB-A0B1-3652D5BCFBE5}</UniqueIdentifier>
+      <UniqueIdentifier>{BF5A456E-3E9B-4D8F-A540-D93C69BA4BC8}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ShootingCPP\Private\AccessTest.cpp">
+      <Filter>Source\ShootingCPP\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ShootingCPP\Private\Bullet.cpp">
       <Filter>Source\ShootingCPP\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\ShootingCPP\Private\CodingTestActor.cpp">
@@ -57,9 +63,12 @@
       <Filter>Source\ShootingCPP\Private</Filter>
     </ClCompile>
     <Filter Include="Source\ShootingCPP\Public">
-      <UniqueIdentifier>{B9D27A62-9C30-46B0-9ADE-E7794886090B}</UniqueIdentifier>
+      <UniqueIdentifier>{AB095AD7-EF8C-4EB4-8DDB-D59D8185E554}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\ShootingCPP\Public\AccessTest.h">
+      <Filter>Source\ShootingCPP\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ShootingCPP\Public\Bullet.h">
       <Filter>Source\ShootingCPP\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\ShootingCPP\Public\CodingTestActor.h">
