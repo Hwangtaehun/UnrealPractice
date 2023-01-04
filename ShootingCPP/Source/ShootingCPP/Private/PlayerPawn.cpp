@@ -6,6 +6,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "Components/ArrowComponent.h"
 #include "Bullet.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 APlayerPawn::APlayerPawn()
@@ -67,4 +68,5 @@ void APlayerPawn::MoveVertical(float value)
 void APlayerPawn::Fire()
 {
 	ABullet* bullet = GetWorld()->SpawnActor<ABullet>(bulletFactory, firePostion->GetComponentLocation(), firePostion->GetComponentRotation());
+	UGameplayStatics::PlaySound2D(GetWorld(), fireSound);
 }
