@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ShootingCPP.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{A3B80578-1CE2-455B-BD2D-2F62B47A4171}</UniqueIdentifier>
+      <UniqueIdentifier>{91D93ACB-9E5D-4E91-8E5E-D011DBEC189D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ShootingCPP.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{1568AE21-58D9-4AAD-80ED-78E8FA0E446E}</UniqueIdentifier>
+      <UniqueIdentifier>{537415CC-69D1-488E-ADD5-B23543B52EEF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ShootingCPP">
-      <UniqueIdentifier>{C979211C-5A87-4630-80EF-A0F410C1E425}</UniqueIdentifier>
+      <UniqueIdentifier>{A75E5CFE-501D-4849-B2D5-177FB84DBA0B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ShootingCPP\ShootingCPP.Build.cs">
       <Filter>Source\ShootingCPP</Filter>
@@ -45,7 +45,7 @@
       <Filter>Source\ShootingCPP</Filter>
     </ClInclude>
     <Filter Include="Source\ShootingCPP\Private">
-      <UniqueIdentifier>{EA4B8FB3-AA0B-4BFF-9AF9-C1880BAD9240}</UniqueIdentifier>
+      <UniqueIdentifier>{24B183F8-1F0E-4118-B12A-59E141FF6671}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ShootingCPP\Private\AccessTest.cpp">
       <Filter>Source\ShootingCPP\Private</Filter>
@@ -63,7 +63,7 @@
       <Filter>Source\ShootingCPP\Private</Filter>
     </ClCompile>
     <Filter Include="Source\ShootingCPP\Public">
-      <UniqueIdentifier>{CDD7011D-BAB3-4270-9410-EDCA65F0DF37}</UniqueIdentifier>
+      <UniqueIdentifier>{857C678F-42AB-4903-A512-29512CF9B7F6}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\ShootingCPP\Public\AccessTest.h">
       <Filter>Source\ShootingCPP\Public</Filter>
