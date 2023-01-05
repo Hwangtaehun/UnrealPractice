@@ -24,6 +24,12 @@ APlayerPawn::APlayerPawn()
 
 	firePostion = CreateDefaultSubobject<UArrowComponent>(TEXT("Fire Position"));
 	firePostion->SetupAttachment(boxComp);
+
+	boxComp->SetGenerateOverlapEvents(true);
+	boxComp->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	boxComp->SetCollisionObjectType(ECC_GameTraceChannel1);
+	boxComp->SetCollisionResponseToAllChannels(ECR_Ignore);
+	boxComp->SetCollisionResponseToChannel(ECC_GameTraceChannel2, ECR_Overlap);
 }
 
 // Called when the game starts or when spawned

@@ -1,18 +1,12 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\r283\Desktop\Github\UnrealPractice).
-  Parsing headers for ShootingCPPEditor
-    Running UnrealHeaderTool "C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\ShootingCPP.uproject" "C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\ShootingCPPEditor\Development\ShootingCPPEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\r283\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for ShootingCPPEditor in 3.4524913 seconds
   Building ShootingCPPEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 6 actions with 16 processes...
-    [1/6] ShootingCPP.init.gen.cpp
-    [2/6] EnemyFactory.cpp
-    [3/6] EnemyFactory.gen.cpp
-    [4/6] UE4Editor-ShootingCPP-0009.lib
-       C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\UE4Editor-ShootingCPP-0009.lib 라이브러리 및 C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\UE4Editor-ShootingCPP-0009.exp 개체를 생성하고 있습니다.
-    [5/6] UE4Editor-ShootingCPP-0009.dll
-       C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\UE4Editor-ShootingCPP-0009.suppressed.lib 라이브러리 및 C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\UE4Editor-ShootingCPP-0009.suppressed.exp 개체를 생성하고 있습니다.
-    [6/6] ShootingCPPEditor.target
-  Total time in Parallel executor: 1.51 seconds
-  Total execution time: 5.99 seconds
+  Building 4 actions with 16 processes...
+    [1/4] PlayerPawn.cpp
+    [2/4] UE4Editor-ShootingCPP-0011.lib
+       C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\UE4Editor-ShootingCPP-0011.lib 라이브러리 및 C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\UE4Editor-ShootingCPP-0011.exp 개체를 생성하고 있습니다.
+    [3/4] UE4Editor-ShootingCPP-0011.dll
+       C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\UE4Editor-ShootingCPP-0011.suppressed.lib 라이브러리 및 C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\UE4Editor-ShootingCPP-0011.suppressed.exp 개체를 생성하고 있습니다.
+    [4/4] ShootingCPPEditor.target
+  Total time in Parallel executor: 2.18 seconds
+  Total execution time: 3.19 seconds
