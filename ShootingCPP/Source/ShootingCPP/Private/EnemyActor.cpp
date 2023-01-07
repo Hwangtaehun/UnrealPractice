@@ -23,6 +23,8 @@ AEnemyActor::AEnemyActor()
 	boxComp->SetCollisionProfileName(TEXT("Enemy"));
 }
 
+AEnemyActor::~AEnemyActor() {}
+
 // Called when the game starts or when spawned
 void AEnemyActor::BeginPlay()
 {

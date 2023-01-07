@@ -12,6 +12,8 @@ AEnemyFactory::AEnemyFactory()
 
 }
 
+AEnemyFactory::~AEnemyFactory() {}
+
 // Called when the game starts or when spawned
 void AEnemyFactory::BeginPlay()
 {

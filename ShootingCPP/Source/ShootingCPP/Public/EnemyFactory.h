@@ -14,6 +14,7 @@ class SHOOTINGCPP_API AEnemyFactory : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AEnemyFactory();
+	~AEnemyFactory();
 
 protected:
 	// Called when the game starts or when spawned

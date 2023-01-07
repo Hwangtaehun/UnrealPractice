@@ -1,12 +1,7 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\r283\Desktop\Github\UnrealPractice).
   Building ShootingCPPEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 16 processes...
-    [1/4] PlayerPawn.cpp
-    [2/4] UE4Editor-ShootingCPP-0022.lib
-       C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\UE4Editor-ShootingCPP-0022.lib 라이브러리 및 C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\UE4Editor-ShootingCPP-0022.exp 개체를 생성하고 있습니다.
-    [3/4] UE4Editor-ShootingCPP-0022.dll
-       C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\UE4Editor-ShootingCPP-0022.suppressed.lib 라이브러리 및 C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\UE4Editor-ShootingCPP-0022.suppressed.exp 개체를 생성하고 있습니다.
-    [4/4] ShootingCPPEditor.target
-  Total time in Parallel executor: 1.62 seconds
-  Total execution time: 2.56 seconds
+  Building 1 action with 16 processes...
+    [1/1] ShootingCPPEditor.target
+  Total time in Parallel executor: 0.21 seconds
+  Total execution time: 1.28 seconds

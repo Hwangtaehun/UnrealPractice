@@ -19,6 +19,8 @@ AKillZone::AKillZone()
 	boxComp->SetCollisionProfileName(TEXT("KillZone"));
 }
 
+AKillZone::~AKillZone() {}
+
 // Called when the game starts or when spawned
 void AKillZone::BeginPlay()
 {

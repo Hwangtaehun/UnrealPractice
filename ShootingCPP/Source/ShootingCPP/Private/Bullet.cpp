@@ -7,6 +7,7 @@
 #include "Components/ArrowComponent.h"
 #include "EnemyActor.h"
 #include "Kismet/GameplayStatics.h"
+#include "ShootingGameModeBase.h"
 
 // Sets default values
 ABullet::ABullet()
@@ -54,7 +55,13 @@ void ABullet::OnBulletOverlap(UPrimitiveComponent* OverlappedComponent, AActor* 
 	{
 		OtherActor->Destroy();
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), explosionFX, GetActorLocation(), GetActorRotation());
-	}
 
+		AGameModeBase* currentMode = GetWorld()->GetAuthGameMode();
+		AShootingGameModeBase* currentGameModeBase = Cast<AShootingGameModeBase>(currentMode);
+		if (currentGameModeBase != nullptr)
+		{
+			currentGameModeBase->AddScore(1);
+		}
+	}
 	Destroy();
 }

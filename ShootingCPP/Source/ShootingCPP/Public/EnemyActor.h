@@ -14,6 +14,7 @@ class SHOOTINGCPP_API AEnemyActor : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AEnemyActor();
+	~AEnemyActor();
 
 protected:
 	// Called when the game starts or when spawned
