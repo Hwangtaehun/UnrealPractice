@@ -14,8 +14,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define SHOOTINGCPP_MenuWidget_generated_h
 
 #define ShootingCPP_Source_ShootingCPP_Public_MenuWidget_h_15_SPARSE_DATA
-#define ShootingCPP_Source_ShootingCPP_Public_MenuWidget_h_15_RPC_WRAPPERS
-#define ShootingCPP_Source_ShootingCPP_Public_MenuWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define ShootingCPP_Source_ShootingCPP_Public_MenuWidget_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execQuit); \
+	DECLARE_FUNCTION(execRestart);
+
+
+#define ShootingCPP_Source_ShootingCPP_Public_MenuWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execQuit); \
+	DECLARE_FUNCTION(execRestart);
+
+
 #define ShootingCPP_Source_ShootingCPP_Public_MenuWidget_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMenuWidget(); \

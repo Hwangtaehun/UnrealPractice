@@ -13,5 +13,20 @@ UCLASS()
 class SHOOTINGCPP_API UMenuWidget : public UUserWidget
 {
 	GENERATED_BODY()
-	
+
+protected:
+	virtual void NativeConstruct() override;
+
+public:
+	UPROPERTY(EditAnywhere, meta = (BindWidget))
+		class UButton* button_Restart;
+
+	UPROPERTY(EditAnywhere, meta = (BindWidget))
+		class UButton* button_Quit;
+
+	UFUNCTION()
+		void Restart();
+
+	UFUNCTION()
+		void Quit();
 };

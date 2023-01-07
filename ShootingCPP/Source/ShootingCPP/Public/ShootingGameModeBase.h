@@ -19,6 +19,8 @@ private:
 
 	class UMainWidget* mainUI;
 
+	class UMenuWidget* menuUI;
+
 	void PrintScore();
 
 protected:
@@ -33,4 +35,8 @@ public:
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class UMainWidget> mainWidget;
 
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UMenuWidget> menuWidget;
+
+	void ShowMenu();
 };
