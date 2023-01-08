@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TPSProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{407B86AD-700D-4C4C-B744-64EC436BB78C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TPSProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TPSProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{36D38658-9105-4564-A1D0-70076AE53DA9}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TPSProject">
+      <UniqueIdentifier>{3426C897-912F-4772-A344-A134E7E525A0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TPSProject\TPSProject.Build.cs">
+      <Filter>Source\TPSProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TPSProject\TPSProject.cpp">
+      <Filter>Source\TPSProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TPSProject\TPSProject.h">
+      <Filter>Source\TPSProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TPSProject\TPSProjectGameModeBase.cpp">
+      <Filter>Source\TPSProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TPSProject\TPSProjectGameModeBase.h">
+      <Filter>Source\TPSProject</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
