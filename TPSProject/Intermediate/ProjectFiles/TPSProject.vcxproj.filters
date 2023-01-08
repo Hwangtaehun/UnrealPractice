@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\TPSProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{407B86AD-700D-4C4C-B744-64EC436BB78C}</UniqueIdentifier>
+      <UniqueIdentifier>{CBF06542-1147-4397-A378-60A502CA2665}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TPSProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{36D38658-9105-4564-A1D0-70076AE53DA9}</UniqueIdentifier>
+      <UniqueIdentifier>{5D353F46-442C-4D04-861E-6C1B01D5D9A2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,22 +24,28 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\TPSProject">
-      <UniqueIdentifier>{3426C897-912F-4772-A344-A134E7E525A0}</UniqueIdentifier>
+      <UniqueIdentifier>{CEF8ACD1-70FD-467C-A46F-6E2B010DC87D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TPSProject\TPSProject.Build.cs">
       <Filter>Source\TPSProject</Filter>
     </None>
-    <ClCompile Include="..\..\Source\TPSProject\TPSProject.cpp">
-      <Filter>Source\TPSProject</Filter>
+    <Filter Include="Source\TPSProject\private">
+      <UniqueIdentifier>{33F87A7C-9AB0-46F8-8C7C-BA646117F27E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TPSProject\private\TPSProject.cpp">
+      <Filter>Source\TPSProject\private</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\TPSProject\TPSProject.h">
-      <Filter>Source\TPSProject</Filter>
+    <ClCompile Include="..\..\Source\TPSProject\private\TPSProjectGameModeBase.cpp">
+      <Filter>Source\TPSProject\private</Filter>
+    </ClCompile>
+    <Filter Include="Source\TPSProject\public">
+      <UniqueIdentifier>{633A3EBB-84A4-4A98-A84F-D68B8CDC98B4}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TPSProject\public\TPSProject.h">
+      <Filter>Source\TPSProject\public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\TPSProject\TPSProjectGameModeBase.cpp">
-      <Filter>Source\TPSProject</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\TPSProject\TPSProjectGameModeBase.h">
-      <Filter>Source\TPSProject</Filter>
+    <ClInclude Include="..\..\Source\TPSProject\public\TPSProjectGameModeBase.h">
+      <Filter>Source\TPSProject\public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
