@@ -41,4 +41,5 @@ public:
 
 private:
 	FVector dir;
+	FVector rot;
 };
