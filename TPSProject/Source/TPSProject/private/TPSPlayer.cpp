@@ -21,9 +21,13 @@ ATPSPlayer::ATPSPlayer()
 		springArmComp->SetupAttachment(RootComponent);
 		springArmComp->SetRelativeLocation(FVector(0, 70, 90));
 		springArmComp->TargetArmLength = 400;
+		springArmComp->bUsePawnControlRotation = true;
 
 		tpsCamComp = CreateDefaultSubobject<UCameraComponent>(TEXT("TpsCamComp"));
 		tpsCamComp->SetupAttachment(springArmComp);
+		tpsCamComp->bUsePawnControlRotation = false;
+
+		bUseControllerRotationYaw = true;
 	}
 }
 
@@ -41,6 +45,11 @@ void ATPSPlayer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	FVector P0 = GetActorLocation();
+	FVector vt = direction * walkSpeed * DeltaTime;
+	FVector P = P0 + vt;
+	SetActorLocation(P);
+	direction = FVector::ZeroVector;
 }
 
 // Called to bind functionality to input
@@ -48,5 +57,28 @@ void ATPSPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &ATPSPlayer::Turn);
+	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &ATPSPlayer::LookUp);
+	PlayerInputComponent->BindAxis(TEXT("Horizontal"), this, &ATPSPlayer::InputHorizontal);
+	PlayerInputComponent->BindAxis(TEXT("Vertical"), this, &ATPSPlayer::InputVertical);
 }
 
+void ATPSPlayer::Turn(float value)
+{
+	AddControllerYawInput(value);
+}
+
+void ATPSPlayer::LookUp(float value)
+{
+	AddControllerPitchInput(value);
+}
+
+void ATPSPlayer::InputHorizontal(float value)
+{
+	direction.Y = value;
+}
+
+void ATPSPlayer::InputVertical(float value)
+{
+	direction.X = value;
+}

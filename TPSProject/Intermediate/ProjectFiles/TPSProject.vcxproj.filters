@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\TPSProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F1F3B762-5BCF-4874-9675-78EF68372170}</UniqueIdentifier>
+      <UniqueIdentifier>{5F9AE02A-540A-4853-A7A0-C8CB77B24F95}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TPSProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{58165EEE-3BE3-41DC-A7D4-542CBBC9A65A}</UniqueIdentifier>
+      <UniqueIdentifier>{E6A2B8AA-CC93-43C3-99D7-16A437DFAB7A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,14 +23,17 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\TPSProject">
-      <UniqueIdentifier>{74E15A9A-AF86-4CC2-8D94-5075D74131D8}</UniqueIdentifier>
+      <UniqueIdentifier>{1019302D-169E-4298-AD05-CBE73FB33047}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TPSProject\TPSProject.Build.cs">
       <Filter>Source\TPSProject</Filter>
     </None>
     <Filter Include="Source\TPSProject\private">
-      <UniqueIdentifier>{76F5CBF4-8C25-4F23-829F-EB11BB80F5F2}</UniqueIdentifier>
+      <UniqueIdentifier>{0FD7B7F7-113A-472C-A963-6B1277B65B56}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\TPSProject\private\TPSPlayer.cpp">
       <Filter>Source\TPSProject\private</Filter>
@@ -42,7 +45,7 @@
       <Filter>Source\TPSProject\private</Filter>
     </ClCompile>
     <Filter Include="Source\TPSProject\public">
-      <UniqueIdentifier>{52F16CF1-CDD9-4FF6-BCC3-B7BB3BDB563E}</UniqueIdentifier>
+      <UniqueIdentifier>{6212C0A8-8B6A-4F8A-B1D5-DDB5A1EED8EA}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\TPSProject\public\TPSPlayer.h">
       <Filter>Source\TPSProject\public</Filter>
