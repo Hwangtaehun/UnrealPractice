@@ -1,0 +1,13 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\r283\Desktop\Github\UnrealPractice).
+  Building TPSProjectEditor...
+  Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 5 actions with 16 processes...
+    [1/5] TPSProject.cpp
+    [2/5] TPSProjectGameModeBase.cpp
+    [3/5] UE4Editor-TPSProject-0009.lib
+       C:\Users\r283\Desktop\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0009.lib 라이브러리 및 C:\Users\r283\Desktop\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0009.exp 개체를 생성하고 있습니다.
+    [4/5] UE4Editor-TPSProject-0009.dll
+       C:\Users\r283\Desktop\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0009.suppressed.lib 라이브러리 및 C:\Users\r283\Desktop\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0009.suppressed.exp 개체를 생성하고 있습니다.
+    [5/5] TPSProjectEditor.target
+  Total time in Parallel executor: 1.26 seconds
+  Total execution time: 2.11 seconds

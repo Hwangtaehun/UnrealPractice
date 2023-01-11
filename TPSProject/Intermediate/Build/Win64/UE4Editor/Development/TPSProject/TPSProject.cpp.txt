@@ -1,2 +1,2 @@
 C:\Users\r283\Desktop\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\Definitions.TPSProject.h
-C:\Users\r283\Desktop\Github\UnrealPractice\TPSProject\Source\TPSProject\TPSProject.h
+C:\Users\r283\Desktop\Github\UnrealPractice\TPSProject\Source\TPSProject\Public\TPSProject.h

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "TPSProject/TPSProjectGameModeBase.h"
+#include "TPSProject/public/TPSProjectGameModeBase.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeTPSProjectGameModeBase() {}
 		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "TPSProjectGameModeBase.h" },
-		{ "ModuleRelativePath", "TPSProjectGameModeBase.h" },
+		{ "ModuleRelativePath", "public/TPSProjectGameModeBase.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeTPSProjectGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATPSProjectGameModeBase, 657161851);
+	IMPLEMENT_CLASS(ATPSProjectGameModeBase, 251465529);
 	template<> TPSPROJECT_API UClass* StaticClass<ATPSProjectGameModeBase>()
 	{
 		return ATPSProjectGameModeBase::StaticClass();
