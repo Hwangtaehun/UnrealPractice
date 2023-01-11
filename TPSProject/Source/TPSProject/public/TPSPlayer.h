@@ -14,6 +14,7 @@ class TPSPROJECT_API ATPSPlayer : public ACharacter
 public:
 	// Sets default values for this character's properties
 	ATPSPlayer();
+	~ATPSPlayer();
 
 protected:
 	// Called when the game starts or when spawned
@@ -26,4 +27,9 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+public:
+	UPROPERTY(VisibleAnywhere, Category = Camera)
+		class USpringArmComponent* springArmComp;
+	UPROPERTY(VisibleAnywhere, Category = Camera)
+		class UCameraComponent* tpsCamComp;
 };
