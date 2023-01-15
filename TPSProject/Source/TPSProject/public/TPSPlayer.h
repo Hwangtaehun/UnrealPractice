@@ -42,4 +42,6 @@ public:
 
 	void InputHorizontal(float value);
 	void InputVertical(float value);
+	void InputJump();
+	void Move();
 };

@@ -10,6 +10,7 @@ ATPSPlayer::ATPSPlayer()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	JumpMaxCount = 2;
 
 	ConstructorHelpers::FObjectFinder<USkeletalMesh>TempMesh(TEXT("SkeletalMesh'/Game/Mannequin/Character/Mesh/SK_Mannequin.SK_Mannequin'"));
 	if (TempMesh.Succeeded())
@@ -45,11 +46,7 @@ void ATPSPlayer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	FVector P0 = GetActorLocation();
-	FVector vt = direction * walkSpeed * DeltaTime;
-	FVector P = P0 + vt;
-	SetActorLocation(P);
-	direction = FVector::ZeroVector;
+	Move();
 }
 
 // Called to bind functionality to input
@@ -61,6 +58,7 @@ void ATPSPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &ATPSPlayer::LookUp);
 	PlayerInputComponent->BindAxis(TEXT("Horizontal"), this, &ATPSPlayer::InputHorizontal);
 	PlayerInputComponent->BindAxis(TEXT("Vertical"), this, &ATPSPlayer::InputVertical);
+	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &ATPSPlayer::InputJump);
 }
 
 void ATPSPlayer::Turn(float value)
@@ -81,4 +79,20 @@ void ATPSPlayer::InputHorizontal(float value)
 void ATPSPlayer::InputVertical(float value)
 {
 	direction.X = value;
+}
+
+void ATPSPlayer::InputJump()
+{
+	Jump();
+}
+
+void ATPSPlayer::Move()
+{
+	direction = FTransform(GetControlRotation()).TransformVector(direction);
+	/*FVector P0 = GetActorLocation();
+	FVector vt = direction * walkSpeed * DeltaTime;
+	FVector P = P0 + vt;
+	SetActorLocation(P);*/
+	AddMovementInput(direction);
+	direction = FVector::ZeroVector;
 }
