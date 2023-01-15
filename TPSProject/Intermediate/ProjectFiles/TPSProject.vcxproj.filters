@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\TPSProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5F9AE02A-540A-4853-A7A0-C8CB77B24F95}</UniqueIdentifier>
+      <UniqueIdentifier>{82BFF49D-B71F-493D-AC0F-01634973465D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TPSProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{E6A2B8AA-CC93-43C3-99D7-16A437DFAB7A}</UniqueIdentifier>
+      <UniqueIdentifier>{F5FAB2E6-020D-4C03-B0A2-E1F72E8E802A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,14 +27,17 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\TPSProject">
-      <UniqueIdentifier>{1019302D-169E-4298-AD05-CBE73FB33047}</UniqueIdentifier>
+      <UniqueIdentifier>{39B7DECC-DA74-4D94-8BA6-CC7B38874DEB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TPSProject\TPSProject.Build.cs">
       <Filter>Source\TPSProject</Filter>
     </None>
     <Filter Include="Source\TPSProject\private">
-      <UniqueIdentifier>{0FD7B7F7-113A-472C-A963-6B1277B65B56}</UniqueIdentifier>
+      <UniqueIdentifier>{227C6600-A330-41A1-95E0-16EA1DB74772}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\TPSProject\private\Bullet.cpp">
+      <Filter>Source\TPSProject\private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TPSProject\private\TPSPlayer.cpp">
       <Filter>Source\TPSProject\private</Filter>
     </ClCompile>
@@ -45,8 +48,11 @@
       <Filter>Source\TPSProject\private</Filter>
     </ClCompile>
     <Filter Include="Source\TPSProject\public">
-      <UniqueIdentifier>{6212C0A8-8B6A-4F8A-B1D5-DDB5A1EED8EA}</UniqueIdentifier>
+      <UniqueIdentifier>{9C1D5D4A-EC89-4BA2-B518-A62D65863F4F}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\TPSProject\public\Bullet.h">
+      <Filter>Source\TPSProject\public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\TPSProject\public\TPSPlayer.h">
       <Filter>Source\TPSProject\public</Filter>
     </ClInclude>
