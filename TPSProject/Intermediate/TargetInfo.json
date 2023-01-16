@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "TPSProject",
-			"Path": "C:\\Users\\r283\\Desktop\\Github\\UnrealPractice\\TPSProject\\Source\\TPSProject.Target.cs",
+			"Path": "D:\\Github\\UnrealPractice\\TPSProject\\Source\\TPSProject.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "TPSProjectEditor",
-			"Path": "C:\\Users\\r283\\Desktop\\Github\\UnrealPractice\\TPSProject\\Source\\TPSProjectEditor.Target.cs",
+			"Path": "D:\\Github\\UnrealPractice\\TPSProject\\Source\\TPSProjectEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
