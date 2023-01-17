@@ -26,6 +26,8 @@ ABullet::ABullet()
 	movementComp->MaxSpeed = 5000;
 	movementComp->bShouldBounce = true;
 	movementComp->Bounciness = 0.3f;
+
+	//InitialLifeSpan = 2.0f;
 }
 
 ABullet::~ABullet() {}
@@ -35,6 +37,9 @@ void ABullet::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	FTimerHandle deathTimer;
+	//GetWorld()->GetTimerManager().SetTimer(deathTimer, this, &ABullet::Die, 2.0f, false);
+	GetWorld()->GetTimerManager().SetTimer(deathTimer, FTimerDelegate::CreateLambda([this]()->void {Destroy(); }), 2.0f, false);
 }
 
 // Called every frame
@@ -44,3 +49,14 @@ void ABullet::Tick(float DeltaTime)
 
 }
 
+void ABullet::Die()
+{
+	Destroy();
+}
+
+void ABullet::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) {
+	if (PropertyChangedEvent.GetPropertyName() == TEXT("speed")) {
+		movementComp->InitialSpeed = speed;
+		movementComp->MaxSpeed = speed;
+	}
+}
