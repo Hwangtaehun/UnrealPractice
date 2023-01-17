@@ -1,12 +1,12 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\r283\Desktop\Github\UnrealPractice).
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Github\UnrealPractice).
   Building TPSProjectEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 16 processes...
-    [1/4] Bullet.cpp
-    [2/4] UE4Editor-TPSProject-0010.lib
-       C:\Users\r283\Desktop\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0010.lib 라이브러리 및 C:\Users\r283\Desktop\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0010.exp 개체를 생성하고 있습니다.
-    [3/4] UE4Editor-TPSProject-0010.dll
-       C:\Users\r283\Desktop\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0010.suppressed.lib 라이브러리 및 C:\Users\r283\Desktop\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0010.suppressed.exp 개체를 생성하고 있습니다.
+    [1/4] TPSPlayer.cpp
+    [2/4] UE4Editor-TPSProject-0002.lib
+       D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0002.lib 라이브러리 및 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0002.exp 개체를 생성하고 있습니다.
+    [3/4] UE4Editor-TPSProject-0002.dll
+       D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0002.suppressed.lib 라이브러리 및 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0002.suppressed.exp 개체를 생성하고 있습니다.
     [4/4] TPSProjectEditor.target
-  Total time in Parallel executor: 1.82 seconds
-  Total execution time: 2.86 seconds
+  Total time in Parallel executor: 1.62 seconds
+  Total execution time: 2.52 seconds

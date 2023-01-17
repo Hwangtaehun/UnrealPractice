@@ -12,6 +12,9 @@ ATPSPlayer::ATPSPlayer()
 	PrimaryActorTick.bCanEverTick = true;
 	JumpMaxCount = 2;
 
+	gunMeshComp = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("GunMeshComp"));
+	gunMeshComp->SetupAttachment(GetMesh());
+
 	ConstructorHelpers::FObjectFinder<USkeletalMesh>TempMesh(TEXT("SkeletalMesh'/Game/Mannequin/Character/Mesh/SK_Mannequin.SK_Mannequin'"));
 	if (TempMesh.Succeeded())
 	{

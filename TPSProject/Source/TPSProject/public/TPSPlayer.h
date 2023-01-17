@@ -44,4 +44,7 @@ public:
 	void InputVertical(float value);
 	void InputJump();
 	void Move();
+
+	UPROPERTY(VisibleAnywhere, Category = GunMesh)
+		class USkeletalMeshComponent* gunMeshComp;
 };

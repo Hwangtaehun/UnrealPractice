@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\TPSProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{3AC9034A-610C-4A49-93A5-EDBFB56B44A6}</UniqueIdentifier>
+      <UniqueIdentifier>{5CB086F9-37B1-4061-8AB0-A65AE0A8184C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TPSProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{5382BAF7-35C7-4B16-A064-A25FABA88850}</UniqueIdentifier>
+      <UniqueIdentifier>{29B1BF72-151D-4776-B71B-8457871C5D94}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,13 +27,13 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\TPSProject">
-      <UniqueIdentifier>{D610DEDC-2143-4CDA-8D1A-7D1AEC4F83D5}</UniqueIdentifier>
+      <UniqueIdentifier>{B05EB2D3-1522-44B3-8E77-5C890F9A8E81}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TPSProject\TPSProject.Build.cs">
       <Filter>Source\TPSProject</Filter>
     </None>
     <Filter Include="Source\TPSProject\private">
-      <UniqueIdentifier>{4001FD4D-D875-4128-B4FC-55A0A5C08612}</UniqueIdentifier>
+      <UniqueIdentifier>{3F843B74-9AD1-4FF7-B0B0-8665414D38A7}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\TPSProject\private\Bullet.cpp">
       <Filter>Source\TPSProject\private</Filter>
@@ -48,7 +48,7 @@
       <Filter>Source\TPSProject\private</Filter>
     </ClCompile>
     <Filter Include="Source\TPSProject\public">
-      <UniqueIdentifier>{F9C00DF8-6AFA-47E7-8477-DA215BB29AD2}</UniqueIdentifier>
+      <UniqueIdentifier>{B4D0F2DD-C9E2-414C-B2E6-B2766498341F}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\TPSProject\public\Bullet.h">
       <Filter>Source\TPSProject\public</Filter>
