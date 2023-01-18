@@ -61,6 +61,8 @@ void ATPSPlayer::BeginPlay()
 	Super::BeginPlay();
 
 	_sniperUI = CreateWidget(GetWorld(), sniperUIFactory);
+	_crosshairUI = CreateWidget(GetWorld(), crosshairUIFactory);
+	_crosshairUI->AddToViewport();
 	
 	ChangeToSniperGun();
 }
@@ -144,6 +146,12 @@ void ATPSPlayer::InputFire()
 			FTransform bulletTrans;
 			bulletTrans.SetLocation(hitInfo.ImpactPoint);
 			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), bulletEffectFactory, bulletTrans);
+
+			auto hitComp = hitInfo.GetComponent();
+			if (hitComp && hitComp->IsSimulatingPhysics()) {
+				FVector force = -hitInfo.ImpactNormal * hitComp->GetMass() * 500000;
+				hitComp->AddForce(force);
+			}
 		}
 	}
 }
@@ -172,11 +180,13 @@ void ATPSPlayer::SniperAim()
 		bSniperAim = true;
 		_sniperUI->AddToViewport();
 		tpsCamComp->SetFieldOfView(45.0f);
+		_crosshairUI->RemoveFromParent();
 	}
 	else
 	{
 		bSniperAim = false;
 		_sniperUI->RemoveFromParent();
 		tpsCamComp->SetFieldOfView(90.0f);
+		_crosshairUI->AddToViewport();
 	}
 }

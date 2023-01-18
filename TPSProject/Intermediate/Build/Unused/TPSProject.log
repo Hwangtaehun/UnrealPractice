@@ -2,17 +2,17 @@
   Parsing headers for TPSProjectEditor
     Running UnrealHeaderTool "D:\Github\UnrealPractice\TPSProject\TPSProject.uproject" "D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\TPSProjectEditor\Development\TPSProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\r283\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
   LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for TPSProjectEditor in 3.8416153 seconds
+  Reflection code generated for TPSProjectEditor in 4.16567 seconds
   Building TPSProjectEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 6 actions with 16 processes...
     [1/6] TPSProject.init.gen.cpp
     [2/6] TPSPlayer.gen.cpp
     [3/6] TPSPlayer.cpp
-    [4/6] UE4Editor-TPSProject-0020.lib
-       D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0020.lib 라이브러리 및 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0020.exp 개체를 생성하고 있습니다.
-    [5/6] UE4Editor-TPSProject-0020.dll
-       D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0020.suppressed.lib 라이브러리 및 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0020.suppressed.exp 개체를 생성하고 있습니다.
+    [4/6] UE4Editor-TPSProject-0022.lib
+       D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0022.lib 라이브러리 및 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0022.exp 개체를 생성하고 있습니다.
+    [5/6] UE4Editor-TPSProject-0022.dll
+       D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0022.suppressed.lib 라이브러리 및 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0022.suppressed.exp 개체를 생성하고 있습니다.
     [6/6] TPSProjectEditor.target
-  Total time in Parallel executor: 3.59 seconds
-  Total execution time: 8.45 seconds
+  Total time in Parallel executor: 3.98 seconds
+  Total execution time: 9.07 seconds
