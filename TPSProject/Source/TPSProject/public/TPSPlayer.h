@@ -30,7 +30,7 @@ public:
 public:
 	UPROPERTY(VisibleAnywhere, Category = Camera)
 		class USpringArmComponent* springArmComp;
-	UPROPERTY(VisibleAnywhere, Category = Camera)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		class UCameraComponent* tpsCamComp;
 
 	void Turn(float value);
@@ -52,4 +52,17 @@ public:
 		TSubclassOf<class ABullet> bulletFactory;
 
 	void InputFire();
+
+	UPROPERTY(VisibleAnywhere, Category = GunMesh)
+		class UStaticMeshComponent* sniperGunComp;
+
+	bool bUsingGrenadeGun = true;
+	void ChangeToGrenadeGun();
+	void ChangeToSniperGun();
+
+	void SniperAim();
+	bool bSniperAim = false;
+	UPROPERTY(EditDefaultsOnly, Category = SniperUI)
+		TSubclassOf<class UUserWidget> sniperUIFactory;
+	class UUserWidget* _sniperUI;
 };
