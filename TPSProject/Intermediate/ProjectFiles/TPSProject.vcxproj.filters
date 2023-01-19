@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\TPSProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{135B70BB-2443-467B-868A-092422A46F7B}</UniqueIdentifier>
+      <UniqueIdentifier>{B5350C22-8958-4DF4-863B-9DCFAC99C783}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TPSProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{EC7B34E4-9D23-41B2-BDBD-5C0E21920F4E}</UniqueIdentifier>
+      <UniqueIdentifier>{EE0E7C00-B786-4B17-B00C-BC0BE10267FA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,18 +27,21 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\TPSProject">
-      <UniqueIdentifier>{CEDA1792-4DE1-408C-9AE5-BEE345933816}</UniqueIdentifier>
+      <UniqueIdentifier>{E0097880-827A-4B87-BFC7-837E21A838B4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TPSProject\TPSProject.Build.cs">
       <Filter>Source\TPSProject</Filter>
     </None>
     <Filter Include="Source\TPSProject\private">
-      <UniqueIdentifier>{20143EAF-5443-4F9C-9F29-79D010C07E6F}</UniqueIdentifier>
+      <UniqueIdentifier>{6EA027AC-8502-4EAF-90F1-794658C7E321}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\TPSProject\private\Bullet.cpp">
       <Filter>Source\TPSProject\private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\TPSProject\private\Enemy.cpp">
+      <Filter>Source\TPSProject\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TPSProject\private\EnemyFSM.cpp">
       <Filter>Source\TPSProject\private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\TPSProject\private\TPSPlayer.cpp">
@@ -51,12 +54,15 @@
       <Filter>Source\TPSProject\private</Filter>
     </ClCompile>
     <Filter Include="Source\TPSProject\public">
-      <UniqueIdentifier>{53F42ECF-99C2-4183-904F-884FE1EAC0C4}</UniqueIdentifier>
+      <UniqueIdentifier>{BFA2EA53-4EA6-4B30-8EEA-11F0A5327A94}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\TPSProject\public\Bullet.h">
       <Filter>Source\TPSProject\public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\TPSProject\public\Enemy.h">
+      <Filter>Source\TPSProject\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TPSProject\public\EnemyFSM.h">
       <Filter>Source\TPSProject\public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\TPSProject\public\TPSPlayer.h">
