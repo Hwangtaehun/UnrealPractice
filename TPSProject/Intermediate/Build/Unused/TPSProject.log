@@ -2,11 +2,11 @@
   Building TPSProjectEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 16 processes...
-    [1/4] Enemy.cpp
-    [2/4] UE4Editor-TPSProject-0005.lib
-       D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0005.lib 라이브러리 및 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0005.exp 개체를 생성하고 있습니다.
-    [3/4] UE4Editor-TPSProject-0005.dll
-       D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0005.suppressed.lib 라이브러리 및 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0005.suppressed.exp 개체를 생성하고 있습니다.
+    [1/4] EnemyFSM.cpp
+    [2/4] UE4Editor-TPSProject-0009.lib
+       D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0009.lib 라이브러리 및 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0009.exp 개체를 생성하고 있습니다.
+    [3/4] UE4Editor-TPSProject-0009.dll
+       D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0009.suppressed.lib 라이브러리 및 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\UE4Editor-TPSProject-0009.suppressed.exp 개체를 생성하고 있습니다.
     [4/4] TPSProjectEditor.target
-  Total time in Parallel executor: 1.53 seconds
-  Total execution time: 2.47 seconds
+  Total time in Parallel executor: 1.65 seconds
+  Total execution time: 2.61 seconds
