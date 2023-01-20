@@ -119,6 +119,18 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_attackDelayTime_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_attackDelayTime;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_hp_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_hp;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_damageDelayTime_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_damageDelayTime;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_dieSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_dieSpeed;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -177,6 +189,27 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackDelayTime = { "attackDelayTime", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemyFSM, attackDelayTime), METADATA_PARAMS(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackDelayTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackDelayTime_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyFSM_Statics::NewProp_hp_MetaData[] = {
+		{ "Category", "FSM" },
+		{ "ModuleRelativePath", "public/EnemyFSM.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_hp = { "hp", nullptr, (EPropertyFlags)0x0010000000010005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemyFSM, hp), METADATA_PARAMS(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_hp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_hp_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyFSM_Statics::NewProp_damageDelayTime_MetaData[] = {
+		{ "Category", "FSM" },
+		{ "ModuleRelativePath", "public/EnemyFSM.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_damageDelayTime = { "damageDelayTime", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemyFSM, damageDelayTime), METADATA_PARAMS(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_damageDelayTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_damageDelayTime_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyFSM_Statics::NewProp_dieSpeed_MetaData[] = {
+		{ "Category", "FSM" },
+		{ "ModuleRelativePath", "public/EnemyFSM.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_dieSpeed = { "dieSpeed", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemyFSM, dieSpeed), METADATA_PARAMS(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_dieSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_dieSpeed_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEnemyFSM_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_mState_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_mState,
@@ -185,6 +218,9 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_me,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackRange,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackDelayTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_hp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_damageDelayTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_dieSpeed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UEnemyFSM_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UEnemyFSM>::IsAbstract,
@@ -213,7 +249,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEnemyFSM, 356265302);
+	IMPLEMENT_CLASS(UEnemyFSM, 1793708813);
 	template<> TPSPROJECT_API UClass* StaticClass<UEnemyFSM>()
 	{
 		return UEnemyFSM::StaticClass();
