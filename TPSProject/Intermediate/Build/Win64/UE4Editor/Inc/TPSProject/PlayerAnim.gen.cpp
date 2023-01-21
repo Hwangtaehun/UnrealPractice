@@ -37,6 +37,10 @@ void EmptyLinkFunctionForGeneratedCodePlayerAnim() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_speed;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_direction_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_direction;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_isInAir_MetaData[];
 #endif
 		static void NewProp_isInAir_SetBit(void* Obj);
@@ -65,6 +69,13 @@ void EmptyLinkFunctionForGeneratedCodePlayerAnim() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UPlayerAnim_Statics::NewProp_speed = { "speed", nullptr, (EPropertyFlags)0x0010000000010005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerAnim, speed), METADATA_PARAMS(Z_Construct_UClass_UPlayerAnim_Statics::NewProp_speed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerAnim_Statics::NewProp_speed_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerAnim_Statics::NewProp_direction_MetaData[] = {
+		{ "Category", "PlayerAnim" },
+		{ "ModuleRelativePath", "public/PlayerAnim.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UPlayerAnim_Statics::NewProp_direction = { "direction", nullptr, (EPropertyFlags)0x0010000000010005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerAnim, direction), METADATA_PARAMS(Z_Construct_UClass_UPlayerAnim_Statics::NewProp_direction_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerAnim_Statics::NewProp_direction_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerAnim_Statics::NewProp_isInAir_MetaData[] = {
 		{ "Category", "PlayerAnim" },
 		{ "ModuleRelativePath", "public/PlayerAnim.h" },
@@ -77,6 +88,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerAnim() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPlayerAnim_Statics::NewProp_isInAir = { "isInAir", nullptr, (EPropertyFlags)0x0010000000010005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UPlayerAnim), &Z_Construct_UClass_UPlayerAnim_Statics::NewProp_isInAir_SetBit, METADATA_PARAMS(Z_Construct_UClass_UPlayerAnim_Statics::NewProp_isInAir_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerAnim_Statics::NewProp_isInAir_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerAnim_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerAnim_Statics::NewProp_speed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerAnim_Statics::NewProp_direction,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerAnim_Statics::NewProp_isInAir,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UPlayerAnim_Statics::StaticCppClassTypeInfo = {
@@ -106,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerAnim() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerAnim, 3038474543);
+	IMPLEMENT_CLASS(UPlayerAnim, 1191617756);
 	template<> TPSPROJECT_API UClass* StaticClass<UPlayerAnim>()
 	{
 		return UPlayerAnim::StaticClass();

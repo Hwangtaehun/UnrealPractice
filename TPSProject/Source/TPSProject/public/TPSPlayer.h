@@ -37,7 +37,9 @@ public:
 	void LookUp(float value);
 
 	UPROPERTY(EditAnywhere, Category = PlayerSetting)
-		float walkSpeed = 600;
+		float walkSpeed = 200;
+	UPROPERTY(EditAnywhere, Category = PlayerSetting)
+		float runSpeed = 600;
 	FVector direction;
 
 	void InputHorizontal(float value);
@@ -72,4 +74,6 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = SniperUI)
 		TSubclassOf<class UUserWidget>crosshairUIFactory;
 	class UUserWidget* _crosshairUI;
+
+	void InputRun();
 };
