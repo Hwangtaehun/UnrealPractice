@@ -9,6 +9,7 @@
 #include <Kismet/GameplayStatics.h>
 #include "EnemyFSM.h"
 #include <GameFramework/CharacterMovementComponent.h>
+#include "PlayerAnim.h"
 
 // Sets default values
 ATPSPlayer::ATPSPlayer()
@@ -38,19 +39,21 @@ ATPSPlayer::ATPSPlayer()
 	JumpMaxCount = 2;
 
 	gunMeshComp = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("GunMeshComp"));
-	gunMeshComp->SetupAttachment(GetMesh());
+	gunMeshComp->SetupAttachment(GetMesh(), TEXT("hand_rSocket"));
 	ConstructorHelpers::FObjectFinder<USkeletalMesh> TempGunMesh(TEXT("SkeletalMesh'/Game/FPWeapon/Mesh/SK_FPGun.SK_FPGun'"));
 	if (TempGunMesh.Succeeded()) {
 		gunMeshComp->SetSkeletalMesh(TempGunMesh.Object);
-		gunMeshComp->SetRelativeLocation(FVector(-14.0f, 52.0f, 120.0f));
+		gunMeshComp->SetRelativeLocation(FVector(-17.0f, 10.0f, -3.0f));
+		gunMeshComp->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));
 	}
 
 	sniperGunComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SniperGunComp"));
-	sniperGunComp->SetupAttachment(GetMesh());
+	sniperGunComp->SetupAttachment(GetMesh(), TEXT("hand_rSocket"));
 	ConstructorHelpers::FObjectFinder<UStaticMesh>TempSniperMesh(TEXT("StaticMesh'/Game/SniperGun/sniper1.sniper1'"));
 	if (TempSniperMesh.Succeeded()) {
 		sniperGunComp->SetStaticMesh(TempSniperMesh.Object);
-		sniperGunComp->SetRelativeLocation(FVector(-22.0f, 55.0f, 120.0f));
+		sniperGunComp->SetRelativeLocation(FVector(-42.0f, 7.0f, 1.0f));
+		sniperGunComp->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));
 		sniperGunComp->SetRelativeScale3D(FVector(0.15f));
 	}
 }
@@ -136,6 +139,12 @@ void ATPSPlayer::Move()
 
 void ATPSPlayer::InputFire()
 {
+	auto controller = GetWorld()->GetFirstPlayerController();
+	controller->PlayerCameraManager->StartCameraShake(cameraShake);
+
+	auto anim = Cast<UPlayerAnim>(GetMesh()->GetAnimInstance());
+	anim->PlayAttackAnim();
+
 	if (bUsingGrenadeGun) {
 		FTransform firePosition = gunMeshComp->GetSocketTransform(TEXT("FirePosition"));
 		GetWorld()->SpawnActor<ABullet>(bulletFactory, firePosition);

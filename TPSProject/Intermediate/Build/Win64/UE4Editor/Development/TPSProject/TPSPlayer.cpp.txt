@@ -139,3 +139,5 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Interfaces/NetworkPredictionInterface.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NetworkPredictionInterface.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
+D:\Github\UnrealPractice\TPSProject\Source\TPSProject\Public\PlayerAnim.h
+D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Inc\TPSProject\PlayerAnim.generated.h
