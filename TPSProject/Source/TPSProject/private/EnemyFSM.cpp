@@ -7,6 +7,7 @@
 #include <Kismet/GameplayStatics.h>
 #include "TPSProject.h"
 #include <Components/CapsuleComponent.h>
+#include "EnemyAnim.h"
 
 // Sets default values for this component's properties
 UEnemyFSM::UEnemyFSM()
@@ -28,6 +29,8 @@ void UEnemyFSM::BeginPlay()
 	auto actor = UGameplayStatics::GetActorOfClass(GetWorld(), ATPSPlayer::StaticClass());
 	target = Cast<ATPSPlayer>(actor);
 	me = Cast<AEnemy>(GetOwner());
+	anim = Cast<UEnemyAnim>(me->GetMesh()->GetAnimInstance());
+	anim->animState = mState;
 }
 
 
@@ -76,6 +79,9 @@ void UEnemyFSM::MoveState()
 	if (dir.Size() < attackRange)
 	{
 		mState = EEnemyState::Attack;
+		anim->animState = mState;
+		anim->bAttackPlay = true;
+		currentTime = attackDelayTime;
 	}
 }
 
@@ -85,11 +91,13 @@ void UEnemyFSM::AttackState()
 	if (currentTime > attackDelayTime) {
 		PRINT_LOG(TEXT("Attack!!!!!"));
 		currentTime = 0;
+		anim->bAttackPlay = true;
 	}
 	float distance = FVector::Distance(target->GetActorLocation(), me->GetActorLocation());
 	if (distance > attackRange)
 	{
 		mState = EEnemyState::Move;
+		anim->animState = mState;
 	}
 }
 
@@ -99,6 +107,7 @@ void UEnemyFSM::DamageState()
 	if (currentTime > damageDelayTime) {
 		mState = EEnemyState::Idle;
 		currentTime = 0;
+		anim->animState = mState;
 	}
 }
 
@@ -125,4 +134,5 @@ void UEnemyFSM::OnDamageProcess()
 		mState = EEnemyState::Die;
 		me->GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	}
+	anim->animState = mState;
 }
