@@ -27,6 +27,13 @@ void EmptyLinkFunctionForGeneratedCodeEnemyAnim() {}
 		P_THIS->OnEndAttackAnimation();
 		P_NATIVE_END;
 	}
+	static FName NAME_UEnemyAnim_PlayDamageAnim = FName(TEXT("PlayDamageAnim"));
+	void UEnemyAnim::PlayDamageAnim(FName sectionName)
+	{
+		EnemyAnim_eventPlayDamageAnim_Parms Parms;
+		Parms.sectionName=sectionName;
+		ProcessEvent(FindFunctionChecked(NAME_UEnemyAnim_PlayDamageAnim),&Parms);
+	}
 	void UEnemyAnim::StaticRegisterNativesUEnemyAnim()
 	{
 		UClass* Class = UEnemyAnim::StaticClass();
@@ -55,6 +62,35 @@ void EmptyLinkFunctionForGeneratedCodeEnemyAnim() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UEnemyAnim_OnEndAttackAnimation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UEnemyAnim_PlayDamageAnim_Statics
+	{
+		static const UE4CodeGen_Private::FNamePropertyParams NewProp_sectionName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UEnemyAnim_PlayDamageAnim_Statics::NewProp_sectionName = { "sectionName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EnemyAnim_eventPlayDamageAnim_Parms, sectionName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEnemyAnim_PlayDamageAnim_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEnemyAnim_PlayDamageAnim_Statics::NewProp_sectionName,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UEnemyAnim_PlayDamageAnim_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FSMEvent" },
+		{ "ModuleRelativePath", "public/EnemyAnim.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEnemyAnim_PlayDamageAnim_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEnemyAnim, nullptr, "PlayDamageAnim", nullptr, nullptr, sizeof(EnemyAnim_eventPlayDamageAnim_Parms), Z_Construct_UFunction_UEnemyAnim_PlayDamageAnim_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemyAnim_PlayDamageAnim_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEnemyAnim_PlayDamageAnim_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemyAnim_PlayDamageAnim_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UEnemyAnim_PlayDamageAnim()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UEnemyAnim_PlayDamageAnim_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -89,6 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyAnim() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UEnemyAnim_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UEnemyAnim_OnEndAttackAnimation, "OnEndAttackAnimation" }, // 663549948
+		{ &Z_Construct_UFunction_UEnemyAnim_PlayDamageAnim, "PlayDamageAnim" }, // 3657715684
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyAnim_Statics::Class_MetaDataParams[] = {
@@ -149,7 +186,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyAnim() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEnemyAnim, 415945281);
+	IMPLEMENT_CLASS(UEnemyAnim, 1356440639);
 	template<> TPSPROJECT_API UClass* StaticClass<UEnemyAnim>()
 	{
 		return UEnemyAnim::StaticClass();

@@ -24,6 +24,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execOnEndAttackAnimation);
 
 
+#define TPSProject_Source_TPSProject_public_EnemyAnim_h_16_EVENT_PARMS \
+	struct EnemyAnim_eventPlayDamageAnim_Parms \
+	{ \
+		FName sectionName; \
+	};
+
+
+#define TPSProject_Source_TPSProject_public_EnemyAnim_h_16_CALLBACK_WRAPPERS
 #define TPSProject_Source_TPSProject_public_EnemyAnim_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUEnemyAnim(); \
@@ -69,13 +77,17 @@ public: \
 
 
 #define TPSProject_Source_TPSProject_public_EnemyAnim_h_16_PRIVATE_PROPERTY_OFFSET
-#define TPSProject_Source_TPSProject_public_EnemyAnim_h_13_PROLOG
+#define TPSProject_Source_TPSProject_public_EnemyAnim_h_13_PROLOG \
+	TPSProject_Source_TPSProject_public_EnemyAnim_h_16_EVENT_PARMS
+
+
 #define TPSProject_Source_TPSProject_public_EnemyAnim_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	TPSProject_Source_TPSProject_public_EnemyAnim_h_16_PRIVATE_PROPERTY_OFFSET \
 	TPSProject_Source_TPSProject_public_EnemyAnim_h_16_SPARSE_DATA \
 	TPSProject_Source_TPSProject_public_EnemyAnim_h_16_RPC_WRAPPERS \
+	TPSProject_Source_TPSProject_public_EnemyAnim_h_16_CALLBACK_WRAPPERS \
 	TPSProject_Source_TPSProject_public_EnemyAnim_h_16_INCLASS \
 	TPSProject_Source_TPSProject_public_EnemyAnim_h_16_STANDARD_CONSTRUCTORS \
 public: \
@@ -88,6 +100,7 @@ public: \
 	TPSProject_Source_TPSProject_public_EnemyAnim_h_16_PRIVATE_PROPERTY_OFFSET \
 	TPSProject_Source_TPSProject_public_EnemyAnim_h_16_SPARSE_DATA \
 	TPSProject_Source_TPSProject_public_EnemyAnim_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	TPSProject_Source_TPSProject_public_EnemyAnim_h_16_CALLBACK_WRAPPERS \
 	TPSProject_Source_TPSProject_public_EnemyAnim_h_16_INCLASS_NO_PURE_DECLS \
 	TPSProject_Source_TPSProject_public_EnemyAnim_h_16_ENHANCED_CONSTRUCTORS \
 private: \
