@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 	TPSPROJECT_API UClass* Z_Construct_UClass_ATPSPlayer_NoRegister();
 	TPSPROJECT_API UClass* Z_Construct_UClass_AEnemy_NoRegister();
 	TPSPROJECT_API UClass* Z_Construct_UClass_UEnemyAnim_NoRegister();
+	AIMODULE_API UClass* Z_Construct_UClass_AAIController_NoRegister();
 // End Cross Module References
 	static UEnum* EEnemyState_StaticEnum()
 	{
@@ -136,6 +137,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_anim_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_anim;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ai_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ai;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -221,6 +226,12 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_anim = { "anim", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemyFSM, anim), Z_Construct_UClass_UEnemyAnim_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_anim_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_anim_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyFSM_Statics::NewProp_ai_MetaData[] = {
+		{ "ModuleRelativePath", "public/EnemyFSM.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_ai = { "ai", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemyFSM, ai), Z_Construct_UClass_AAIController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_ai_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_ai_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEnemyFSM_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_mState_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_mState,
@@ -233,6 +244,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_damageDelayTime,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_dieSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_anim,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_ai,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UEnemyFSM_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UEnemyFSM>::IsAbstract,
@@ -261,7 +273,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEnemyFSM, 1857959209);
+	IMPLEMENT_CLASS(UEnemyFSM, 130720931);
 	template<> TPSPROJECT_API UClass* StaticClass<UEnemyFSM>()
 	{
 		return UEnemyFSM::StaticClass();
