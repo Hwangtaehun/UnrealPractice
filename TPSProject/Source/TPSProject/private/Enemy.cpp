@@ -23,6 +23,7 @@ AEnemy::AEnemy()
 	if (tempClass.Succeeded()) {
 		GetMesh()->SetAnimInstanceClass(tempClass.Class);
 	}
+	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 }
 
 AEnemy::~AEnemy() {}
