@@ -8,6 +8,8 @@ UPlayerMove::UPlayerMove()
 	PrimaryComponentTick.bCanEverTick = true;
 }
 
+UPlayerMove::~UPlayerMove() {}
+
 void UPlayerMove::BeginPlay()
 {
 	Super::BeginPlay();

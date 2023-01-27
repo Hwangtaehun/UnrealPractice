@@ -16,6 +16,7 @@ class TPSPROJECT_API UPlayerMove : public UPlayerBaseComponent
 	
 public:
 	UPlayerMove();
+	~UPlayerMove();
 	virtual void BeginPlay() override;
 	virtual void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
