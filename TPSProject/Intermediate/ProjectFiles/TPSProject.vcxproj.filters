@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\TPSProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5489E800-B08B-46A8-9DB7-829FD6F12A07}</UniqueIdentifier>
+      <UniqueIdentifier>{6D7DBD7E-0CF8-4A2E-AB87-ED7A3FB6D00D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TPSProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{FF1511A6-D75C-4BF9-9E82-200E8E2AB181}</UniqueIdentifier>
+      <UniqueIdentifier>{8B872B55-D09A-49F2-B8E4-66E925ABCC86}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,13 +27,13 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\TPSProject">
-      <UniqueIdentifier>{A7140977-00A9-4832-A9D7-8530230A56EC}</UniqueIdentifier>
+      <UniqueIdentifier>{56E50106-F64F-439B-98A3-3D68DE9F0F45}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TPSProject\TPSProject.Build.cs">
       <Filter>Source\TPSProject</Filter>
     </None>
     <Filter Include="Source\TPSProject\private">
-      <UniqueIdentifier>{3418361D-6CE1-43CF-8980-59CDB216EAFE}</UniqueIdentifier>
+      <UniqueIdentifier>{89CFCC8D-05EE-4E7C-876B-6076FDAEB547}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\TPSProject\private\Bullet.cpp">
       <Filter>Source\TPSProject\private</Filter>
@@ -56,6 +56,9 @@
     <ClCompile Include="..\..\Source\TPSProject\private\PlayerBaseComponent.cpp">
       <Filter>Source\TPSProject\private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\TPSProject\private\PlayerMove.cpp">
+      <Filter>Source\TPSProject\private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TPSProject\private\TPSPlayer.cpp">
       <Filter>Source\TPSProject\private</Filter>
     </ClCompile>
@@ -66,7 +69,7 @@
       <Filter>Source\TPSProject\private</Filter>
     </ClCompile>
     <Filter Include="Source\TPSProject\public">
-      <UniqueIdentifier>{D3588E1E-69CA-4AC8-B379-AF176A5C02FC}</UniqueIdentifier>
+      <UniqueIdentifier>{A436564F-57DE-433A-892A-97C09B1679CE}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\TPSProject\public\Bullet.h">
       <Filter>Source\TPSProject\public</Filter>
@@ -87,6 +90,9 @@
       <Filter>Source\TPSProject\public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\TPSProject\public\PlayerBaseComponent.h">
+      <Filter>Source\TPSProject\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TPSProject\public\PlayerMove.h">
       <Filter>Source\TPSProject\public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\TPSProject\public\TPSPlayer.h">

@@ -141,3 +141,7 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
 D:\Github\UnrealPractice\TPSProject\Source\TPSProject\Public\PlayerAnim.h
 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Inc\TPSProject\PlayerAnim.generated.h
+D:\Github\UnrealPractice\TPSProject\Source\TPSProject\Public\PlayerMove.h
+D:\Github\UnrealPractice\TPSProject\Source\TPSProject\Public\PlayerBaseComponent.h
+D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Inc\TPSProject\PlayerBaseComponent.generated.h
+D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Inc\TPSProject\PlayerMove.generated.h
