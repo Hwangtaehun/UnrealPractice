@@ -86,6 +86,8 @@ void EmptyLinkFunctionForGeneratedCodePlayerFire() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerFire_Statics::Class_MetaDataParams[] = {
+		{ "BlueprintSpawnableComponent", "" },
+		{ "ClassGroupNames", "PlayerComponent" },
 		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "PlayerFire.h" },
 		{ "ModuleRelativePath", "public/PlayerFire.h" },
@@ -195,7 +197,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerFire() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerFire, 2413594614);
+	IMPLEMENT_CLASS(UPlayerFire, 1304694557);
 	template<> TPSPROJECT_API UClass* StaticClass<UPlayerFire>()
 	{
 		return UPlayerFire::StaticClass();

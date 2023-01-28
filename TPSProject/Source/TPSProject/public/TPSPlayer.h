@@ -6,6 +6,12 @@
 #include "GameFramework/Character.h"
 #include "TPSPlayer.generated.h"
 
+//DECLARE_DELEGATE_OneParam(FMyDelegate, FName);
+//DECLARE_DYNAMIC_DELEGATE_OneParam(FMyDynamicDelegate, FName, name);
+//DECLARE_MULTICAST_DELEGATE_OneParam(FMyMultiDelegate, FName);
+//DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FMyDMDelegate, FName, name);
+DECLARE_MULTICAST_DELEGATE_OneParam(FInputBindingDelegate, class UInputComponent*);
+
 UCLASS()
 class TPSPROJECT_API ATPSPlayer : public ACharacter
 {
@@ -15,6 +21,17 @@ public:
 	// Sets default values for this character's properties
 	ATPSPlayer();
 	~ATPSPlayer();
+
+	FInputBindingDelegate onInputBindingDelegate;
+
+	/*FMyDelegate myVar;
+	FMyDynamicDelegate myDynamicVar;
+	FMyMultiDelegate myMultiVar;
+	FMyDMDelegate myDMVar;
+
+	UFUNCTION()
+	void TestFunc(FName name);
+	void PlayDelegate();*/
 
 protected:
 	// Called when the game starts or when spawned

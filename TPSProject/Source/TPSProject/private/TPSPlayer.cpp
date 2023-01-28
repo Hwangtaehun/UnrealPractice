@@ -54,15 +54,37 @@ ATPSPlayer::ATPSPlayer()
 	}
 
 	playerMove = CreateDefaultSubobject<UPlayerMove>(TEXT("PlayerMove"));
-	playerFire = CreateDefaultSubobject<UPlayerFire>(TEXT("PlayerFire"));
+	//playerFire = CreateDefaultSubobject<UPlayerFire>(TEXT("PlayerFire"));
 }
 
 ATPSPlayer::~ATPSPlayer() {}
+
+//void ATPSPlayer::TestFunc(FName name) {
+//	UE_LOG(LogTemp, Warning, TEXT("TestFunc Call : %s"), *name.ToString());
+//}
+//
+//void ATPSPlayer::PlayDelegate() {
+//	myVar.ExecuteIfBound(TEXT("Single Brad"));
+//	myMultiVar.Broadcast(TEXT("Multi Brad"));
+//}
 
 // Called when the game starts or when spawned
 void ATPSPlayer::BeginPlay()
 {
 	Super::BeginPlay();
+
+	/*myVar.BindUObject(this, &ATPSPlayer::TestFunc);
+	myVar.BindUFunction(this, TEXT("TestFunc"));
+	myVar.BindLambda([this](FName name)->void {});
+
+	myDynamicVar.BindDynamic(this, &ATPSPlayer::TestFunc);
+
+	myMultiVar.AddUObject(this, &ATPSPlayer::TestFunc);
+
+	myDMVar.AddDynamic(this, &ATPSPlayer::TestFunc);
+
+	FTimerHandle timer;
+	GetWorld()->GetTimerManager().SetTimer(timer, this, &ATPSPlayer::PlayDelegate, 2);*/
 }
 
 // Called every frame
@@ -76,6 +98,8 @@ void ATPSPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	playerMove->SetupInputBinding(PlayerInputComponent);
-	playerFire->SetupInputBinding(PlayerInputComponent);
+	onInputBindingDelegate.Broadcast(PlayerInputComponent);
+
+	/*playerMove->SetupInputBinding(PlayerInputComponent);
+	playerFire->SetupInputBinding(PlayerInputComponent);*/
 }
