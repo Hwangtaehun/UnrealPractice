@@ -16,6 +16,7 @@ void UPlayerMove::BeginPlay()
 
 	moveComp->MaxWalkSpeed = walkSpeed;
 }
+
 void UPlayerMove::TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
@@ -33,7 +34,7 @@ void UPlayerMove::LookUp(float value)
 	me->AddControllerPitchInput(value);
 }
 
-void UPlayerMove::SetupInputBinding(UInputComponent* PlayerInputComponent)
+void UPlayerMove::SetupInputBinding(class UInputComponent* PlayerInputComponent)
 {
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &UPlayerMove::Turn);
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &UPlayerMove::LookUp);

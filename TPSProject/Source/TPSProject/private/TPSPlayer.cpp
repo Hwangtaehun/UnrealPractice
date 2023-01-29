@@ -1,11 +1,13 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
+#include "TPSProject.h"
 #include "TPSPlayer.h"
 #include <GameFramework/SpringArmComponent.h>
 #include <Camera/CameraComponent.h>
 #include "PlayerMove.h"
 #include "PlayerFire.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ATPSPlayer::ATPSPlayer()
@@ -73,6 +75,7 @@ void ATPSPlayer::BeginPlay()
 {
 	Super::BeginPlay();
 
+	hp = initialHp;
 	/*myVar.BindUObject(this, &ATPSPlayer::TestFunc);
 	myVar.BindUFunction(this, TEXT("TestFunc"));
 	myVar.BindLambda([this](FName name)->void {});
@@ -102,4 +105,20 @@ void ATPSPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 
 	/*playerMove->SetupInputBinding(PlayerInputComponent);
 	playerFire->SetupInputBinding(PlayerInputComponent);*/
+}
+
+void ATPSPlayer::OnHitEvent()
+{
+	PRINT_LOG(TEXT("Damaged !!!"));
+	hp--;
+	if (hp <= 0)
+	{
+		PRINT_LOG(TEXT("Player is dead!"));
+		OnGameOver();
+	}
+}
+
+void ATPSPlayer::OnGameOver_Implementation()
+{
+	UGameplayStatics::SetGamePaused(GetWorld(), true);
 }

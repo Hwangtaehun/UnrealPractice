@@ -1,4 +1,5 @@
 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Development\TPSProject\Definitions.TPSProject.h
+D:\Github\UnrealPractice\TPSProject\Source\TPSProject\Public\TPSProject.h
 D:\Github\UnrealPractice\TPSProject\Source\TPSProject\Public\TPSPlayer.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
@@ -33,3 +34,12 @@ D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Inc\TPSPr
 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Inc\TPSProject\PlayerMove.generated.h
 D:\Github\UnrealPractice\TPSProject\Source\TPSProject\Public\PlayerFire.h
 D:\Github\UnrealPractice\TPSProject\Intermediate\Build\Win64\UE4Editor\Inc\TPSProject\PlayerFire.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h

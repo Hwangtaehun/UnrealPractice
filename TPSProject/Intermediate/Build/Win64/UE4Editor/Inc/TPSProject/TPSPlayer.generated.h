@@ -14,8 +14,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define TPSPROJECT_TPSPlayer_generated_h
 
 #define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_SPARSE_DATA
-#define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_RPC_WRAPPERS
-#define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_RPC_WRAPPERS_NO_PURE_DECLS
+#define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_RPC_WRAPPERS \
+	virtual void OnGameOver_Implementation(); \
+ \
+	DECLARE_FUNCTION(execOnGameOver); \
+	DECLARE_FUNCTION(execOnHitEvent);
+
+
+#define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void OnGameOver_Implementation(); \
+ \
+	DECLARE_FUNCTION(execOnGameOver); \
+	DECLARE_FUNCTION(execOnHitEvent);
+
+
+#define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_EVENT_PARMS
+#define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_CALLBACK_WRAPPERS
 #define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATPSPlayer(); \
@@ -59,13 +73,17 @@ public: \
 
 
 #define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_PRIVATE_PROPERTY_OFFSET
-#define TPSProject_Source_TPSProject_public_TPSPlayer_h_15_PROLOG
+#define TPSProject_Source_TPSProject_public_TPSPlayer_h_15_PROLOG \
+	TPSProject_Source_TPSProject_public_TPSPlayer_h_18_EVENT_PARMS
+
+
 #define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	TPSProject_Source_TPSProject_public_TPSPlayer_h_18_PRIVATE_PROPERTY_OFFSET \
 	TPSProject_Source_TPSProject_public_TPSPlayer_h_18_SPARSE_DATA \
 	TPSProject_Source_TPSProject_public_TPSPlayer_h_18_RPC_WRAPPERS \
+	TPSProject_Source_TPSProject_public_TPSPlayer_h_18_CALLBACK_WRAPPERS \
 	TPSProject_Source_TPSProject_public_TPSPlayer_h_18_INCLASS \
 	TPSProject_Source_TPSProject_public_TPSPlayer_h_18_STANDARD_CONSTRUCTORS \
 public: \
@@ -78,6 +96,7 @@ public: \
 	TPSProject_Source_TPSProject_public_TPSPlayer_h_18_PRIVATE_PROPERTY_OFFSET \
 	TPSProject_Source_TPSProject_public_TPSPlayer_h_18_SPARSE_DATA \
 	TPSProject_Source_TPSProject_public_TPSPlayer_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	TPSProject_Source_TPSProject_public_TPSPlayer_h_18_CALLBACK_WRAPPERS \
 	TPSProject_Source_TPSProject_public_TPSPlayer_h_18_INCLASS_NO_PURE_DECLS \
 	TPSProject_Source_TPSProject_public_TPSPlayer_h_18_ENHANCED_CONSTRUCTORS \
 private: \
