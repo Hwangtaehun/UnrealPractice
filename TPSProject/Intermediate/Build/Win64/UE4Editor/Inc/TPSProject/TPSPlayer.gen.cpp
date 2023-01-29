@@ -42,6 +42,13 @@ void EmptyLinkFunctionForGeneratedCodeTPSPlayer() {}
 	{
 		ProcessEvent(FindFunctionChecked(NAME_ATPSPlayer_OnGameOver),NULL);
 	}
+	static FName NAME_ATPSPlayer_OnUsingGrenade = FName(TEXT("OnUsingGrenade"));
+	void ATPSPlayer::OnUsingGrenade(bool isGrenade)
+	{
+		TPSPlayer_eventOnUsingGrenade_Parms Parms;
+		Parms.isGrenade=isGrenade ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_ATPSPlayer_OnUsingGrenade),&Parms);
+	}
 	void ATPSPlayer::StaticRegisterNativesATPSPlayer()
 	{
 		UClass* Class = ATPSPlayer::StaticClass();
@@ -94,6 +101,40 @@ void EmptyLinkFunctionForGeneratedCodeTPSPlayer() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATPSPlayer_OnHitEvent_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics
+	{
+		static void NewProp_isGrenade_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_isGrenade;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::NewProp_isGrenade_SetBit(void* Obj)
+	{
+		((TPSPlayer_eventOnUsingGrenade_Parms*)Obj)->isGrenade = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::NewProp_isGrenade = { "isGrenade", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(TPSPlayer_eventOnUsingGrenade_Parms), &Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::NewProp_isGrenade_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::NewProp_isGrenade,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Health" },
+		{ "ModuleRelativePath", "public/TPSPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATPSPlayer, nullptr, "OnUsingGrenade", nullptr, nullptr, sizeof(TPSPlayer_eventOnUsingGrenade_Parms), Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -151,6 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeTPSPlayer() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_ATPSPlayer_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ATPSPlayer_OnGameOver, "OnGameOver" }, // 3626144559
 		{ &Z_Construct_UFunction_ATPSPlayer_OnHitEvent, "OnHitEvent" }, // 278708377
+		{ &Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade, "OnUsingGrenade" }, // 968542442
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATPSPlayer_Statics::Class_MetaDataParams[] = {
@@ -258,7 +300,7 @@ void EmptyLinkFunctionForGeneratedCodeTPSPlayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATPSPlayer, 2503027293);
+	IMPLEMENT_CLASS(ATPSPlayer, 1287797447);
 	template<> TPSPROJECT_API UClass* StaticClass<ATPSPlayer>()
 	{
 		return ATPSPlayer::StaticClass();

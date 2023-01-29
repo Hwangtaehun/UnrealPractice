@@ -28,7 +28,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execOnHitEvent);
 
 
-#define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_EVENT_PARMS
+#define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_EVENT_PARMS \
+	struct TPSPlayer_eventOnUsingGrenade_Parms \
+	{ \
+		bool isGrenade; \
+	};
+
+
 #define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_CALLBACK_WRAPPERS
 #define TPSProject_Source_TPSProject_public_TPSPlayer_h_18_INCLASS_NO_PURE_DECLS \
 private: \
