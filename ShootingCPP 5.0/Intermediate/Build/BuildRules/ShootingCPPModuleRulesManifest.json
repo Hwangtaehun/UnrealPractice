@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Github\\UnrealPractice\\ShootingCPP 5.0\\Source\\ShootingCPP\\ShootingCPP.Build.cs",
+		"D:\\Github\\UnrealPractice\\ShootingCPP 5.0\\Source\\ShootingCPP.Target.cs",
+		"D:\\Github\\UnrealPractice\\ShootingCPP 5.0\\Source\\ShootingCPPEditor.Target.cs"
+	],
+	"EngineVersion": "5.0.3"
+}

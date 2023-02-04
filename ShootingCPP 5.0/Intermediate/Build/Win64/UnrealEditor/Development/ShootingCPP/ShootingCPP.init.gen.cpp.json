@@ -1,0 +1,13 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\github\\unrealpractice\\shootingcpp 5.0\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingcpp\\shootingcpp.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\github\\unrealpractice\\shootingcpp 5.0\\intermediate\\build\\win64\\shootingcppeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\github\\unrealpractice\\shootingcpp 5.0\\intermediate\\build\\win64\\unrealeditor\\development\\shootingcpp\\definitions.shootingcpp.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

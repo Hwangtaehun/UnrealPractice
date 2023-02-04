@@ -1,0 +1,35 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-ShootingCPP.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\ShootingCPPEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\AccessTest.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\Bullet.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\CodingTestActor.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\EnemyActor.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\EnemyFactory.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\KillZone.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\MainWidget.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\MenuWidget.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\PlayerPawn.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\ShootingGameModeBase.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\ShootingCPP.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\ShootingCPPGameModeBase.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\AccessTest.gen.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\Bullet.gen.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\CodingTestActor.gen.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\EnemyActor.gen.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\EnemyFactory.gen.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\KillZone.gen.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\MainWidget.gen.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\MenuWidget.gen.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\PlayerPawn.gen.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\ShootingCPP.init.gen.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\ShootingCPPGameModeBase.gen.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\ShootingGameModeBase.gen.cpp.obj"
+"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\Default.rc2.res"
+/OUT:"D:\Github\UnrealPractice\ShootingCPP 5.0\Intermediate\Build\Win64\UnrealEditor\Development\ShootingCPP\UnrealEditor-ShootingCPP.lib"
