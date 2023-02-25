@@ -1,5 +1,5 @@
 ﻿  Using bundled DotNet SDK
   Log file: C:\Users\r283\AppData\Local\UnrealBuildTool\Log.txt
   Using 'git status' to determine working set for adaptive non-unity build (D:\Github\UnrealPractice).
-  Target is up to date
-  Total execution time: 1.02 seconds
+UnrealBuildTool : error : Unable to build while Live Coding is active. Exit the editor and game, or press Ctrl+Alt+F11 if iterating on code in the editor or game
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(45,5): error MSB3073: ""D:\Download\Epic Games\UE_5.0\Engine\Build\BatchFiles\Build.bat" ShootingCPPEditor Win64 Development -Project="D:\Github\UnrealPractice\ShootingCPP 5.0\ShootingCPP.uproject" -WaitMutex -FromMsBuild" 명령이 종료되었습니다(코드: 6).

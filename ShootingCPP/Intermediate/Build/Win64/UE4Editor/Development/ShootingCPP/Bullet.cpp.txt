@@ -1,14 +1,14 @@
-C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\Definitions.ShootingCPP.h
-C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Source\ShootingCPP\Public\Bullet.h
-C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Inc\ShootingCPP\Bullet.generated.h
+D:\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\Definitions.ShootingCPP.h
+D:\Github\UnrealPractice\ShootingCPP\Source\ShootingCPP\Public\Bullet.h
+D:\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Inc\ShootingCPP\Bullet.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ArrowComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ArrowComponent.generated.h
-C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Source\ShootingCPP\Public\EnemyActor.h
-C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Inc\ShootingCPP\EnemyActor.generated.h
+D:\Github\UnrealPractice\ShootingCPP\Source\ShootingCPP\Public\EnemyActor.h
+D:\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Inc\ShootingCPP\EnemyActor.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
@@ -18,9 +18,9 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
-C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Source\ShootingCPP\Public\ShootingGameModeBase.h
+D:\Github\UnrealPractice\ShootingCPP\Source\ShootingCPP\Public\ShootingGameModeBase.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Inc\ShootingCPP\ShootingGameModeBase.generated.h
+D:\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Inc\ShootingCPP\ShootingGameModeBase.generated.h

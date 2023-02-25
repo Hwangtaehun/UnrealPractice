@@ -1,5 +1,5 @@
-C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\Definitions.ShootingCPP.h
+D:\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Development\ShootingCPP\Definitions.ShootingCPP.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Source\ShootingCPP/Public/EnemyActor.h
-C:\Users\r283\Desktop\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Inc\ShootingCPP\EnemyActor.generated.h
+D:\Github\UnrealPractice\ShootingCPP\Source\ShootingCPP/Public/EnemyActor.h
+D:\Github\UnrealPractice\ShootingCPP\Intermediate\Build\Win64\UE4Editor\Inc\ShootingCPP\EnemyActor.generated.h
