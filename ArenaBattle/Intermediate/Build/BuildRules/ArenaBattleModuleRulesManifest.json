@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Github\\GameProject\\ArenaBattle\\Source\\ArenaBattle\\ArenaBattle.Build.cs",
+		"D:\\Github\\GameProject\\ArenaBattle\\Source\\ArenaBattle.Target.cs",
+		"D:\\Github\\GameProject\\ArenaBattle\\Source\\ArenaBattleEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

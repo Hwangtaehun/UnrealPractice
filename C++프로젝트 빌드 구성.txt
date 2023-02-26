@@ -1,0 +1,5 @@
+DebugGame: 자센한 디버깅을 위해 최적화가 안 된 결과물을 생성하는 빌드 구성이다. 게임 실행을 위한 exe파일 생성한다.
+DebugGmae Editor: DebugGame과 동일한 수준의 에디터용 DLL 파일을 생성한다.
+Development: 중간 수준의 최적화와 디버깅도 가능한 결과물을 생성하는 구성이다. exe 파일을 생성한다.
+Development Editor: Development와 동일한 수준의 에디터용 DLL 파일을 생성한다. 설정의 기본값이다.
+Shipping: 게임의 최종 배포를 위해 최적화된 코드를 만들어내는 구성이다. exe파일을 생성한다.
