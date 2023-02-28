@@ -1,2 +1,0 @@
-D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\Definitions.ArenaBattle.h
-D:\Github\UnrealPractice\ArenaBattle\Source\ArenaBattle\ArenaBattle.h
