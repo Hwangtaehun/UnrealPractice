@@ -24,14 +24,17 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UPROPERTY(VisibleAnywhere)
-		UStaticMeshComponent* Body;
+	UStaticMeshComponent* Body;
 
 	UPROPERTY(VisibleAnywhere)
-		UStaticMeshComponent* Water;
-
-	/*UPROPERTY(VisibleAnywhere)
-		UPointLightComponent* Light;
+	UStaticMeshComponent* Water;
 
 	UPROPERTY(VisibleAnywhere)
-		UParticleSystemComponent* Splash;*/
+	UPointLightComponent* Light;
+
+	UPROPERTY(VisibleAnywhere)
+	UParticleSystemComponent* Splash;
+
+	UPROPERTY(EditAnywhere, Category=ID)
+	int32 ID;
 };
