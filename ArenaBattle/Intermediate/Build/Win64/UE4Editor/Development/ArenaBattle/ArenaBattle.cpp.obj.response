@@ -231,8 +231,8 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I D:\Github\GameProject\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle
-/I D:\Github\GameProject\ArenaBattle\Source
+/I D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle
+/I D:\Github\UnrealPractice\ArenaBattle\Source
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -262,12 +262,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"D:\Github\GameProject\ArenaBattle\Intermediate\Build\Win64\ArenaBattleEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"D:\Github\GameProject\ArenaBattle\Intermediate\Build\Win64\ArenaBattleEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\Github\GameProject\ArenaBattle\Intermediate\Build\Win64\ArenaBattleEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\Github\GameProject\ArenaBattle\Source\ArenaBattle\ArenaBattle.cpp"
-/FI"D:\Github\GameProject\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\Definitions.ArenaBattle.h"
-/Fo"D:\Github\GameProject\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\ArenaBattle.cpp.obj"
+/FI"D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\ArenaBattleEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\ArenaBattleEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\ArenaBattleEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\Github\UnrealPractice\ArenaBattle\Source\ArenaBattle\ArenaBattle.cpp"
+/FI"D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\Definitions.ArenaBattle.h"
+/Fo"D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\ArenaBattle.cpp.obj"
 /TP
 /GR-
 /W4
