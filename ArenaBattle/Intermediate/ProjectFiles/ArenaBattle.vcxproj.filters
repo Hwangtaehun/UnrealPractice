@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ArenaBattle.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{43350612-D809-4E13-870A-0213C8EFDF93}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ArenaBattle.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ArenaBattleEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{86E6E0B9-429C-46EC-AE65-6824F15F7722}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ArenaBattle">
+      <UniqueIdentifier>{B0C6648D-3A5C-467E-A105-02B40CADA4E4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ArenaBattle\ArenaBattle.Build.cs">
+      <Filter>Source\ArenaBattle</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ArenaBattle\ArenaBattle.cpp">
+      <Filter>Source\ArenaBattle</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ArenaBattle\ArenaBattle.h">
+      <Filter>Source\ArenaBattle</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ArenaBattle\Fountain.cpp">
+      <Filter>Source\ArenaBattle</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ArenaBattle\Fountain.h">
+      <Filter>Source\ArenaBattle</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
