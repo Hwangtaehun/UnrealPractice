@@ -1,0 +1,3 @@
+D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\Definitions.ArenaBattle.h
+D:\Github\UnrealPractice\ArenaBattle\Source\ArenaBattle\ABPawn.h
+D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABPawn.generated.h
