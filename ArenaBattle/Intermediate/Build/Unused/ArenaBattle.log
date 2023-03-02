@@ -1,21 +1,12 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Github\UnrealPractice).
-  Parsing headers for ArenaBattleEditor
-    Running UnrealHeaderTool "D:\Github\UnrealPractice\ArenaBattle\ArenaBattle.uproject" "D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\ArenaBattleEditor\Development\ArenaBattleEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\r283\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for ArenaBattleEditor in 3.733601 seconds
   Building ArenaBattleEditor...
   Using Visual Studio 2019 14.29.30148 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 7 actions with 16 processes...
-    [1/7] ArenaBattle.init.gen.cpp
-    [2/7] ABGameMode.cpp
-    [3/7] ABCharacter.gen.cpp
-    [4/7] ABCharacter.cpp
-    [5/7] UE4Editor-ArenaBattle-0009.lib
-       D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0009.lib 라이브러리 및 D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0009.exp 개체를 생성하고 있습니다.
-    [6/7] UE4Editor-ArenaBattle-0009.dll
-       D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0009.suppressed.lib 라이브러리 및 D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0009.suppressed.exp 개체를 생성하고 있습니다.
-ABCharacter.cpp.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: virtual void __cdecl AABCharacter::PostInitializeComponents(void)" (?PostInitializeComponents@AABCharacter@@UEAAXXZ)
-ABCharacter.gen.cpp.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: virtual void __cdecl AABCharacter::PostInitializeComponents(void)" (?PostInitializeComponents@AABCharacter@@UEAAXXZ)
-ABCharacter.gen.cpp.obj : error LNK2019: "private: void __cdecl AABCharacter::OnAttackMontageEnded(class UAnimMontage *,bool)" (?OnAttackMontageEnded@AABCharacter@@AEAAXPEAVUAnimMontage@@_N@Z)"public: static void __cdecl AABCharacter::execOnAttackMontageEnded(class UObject *,struct FFrame &,void * const)" (?execOnAttackMontageEnded@AABCharacter@@SAXPEAVUObject@@AEAUFFrame@@QEAX@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
-D:\Github\UnrealPractice\ArenaBattle\Binaries\Win64\UE4Editor-ArenaBattle-0009.dll : fatal error LNK1120: 2개의 확인할 수 없는 외부 참조입니다.
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(45,5): error MSB3073: ""C:\Program Files\Epic Games\UE_4.27\Engine\Build\BatchFiles\Build.bat" ArenaBattleEditor Win64 Development -Project="D:\Github\UnrealPractice\ArenaBattle\ArenaBattle.uproject" -WaitMutex -FromMsBuild" 명령이 종료되었습니다(코드: 6).
+  Building 4 actions with 16 processes...
+    [1/4] ABCharacter.cpp
+    [2/4] UE4Editor-ArenaBattle-0011.lib
+       D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0011.lib 라이브러리 및 D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0011.exp 개체를 생성하고 있습니다.
+    [3/4] UE4Editor-ArenaBattle-0011.dll
+       D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0011.suppressed.lib 라이브러리 및 D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0011.suppressed.exp 개체를 생성하고 있습니다.
+    [4/4] ArenaBattleEditor.target
+  Total time in Parallel executor: 3.31 seconds
+  Total execution time: 4.29 seconds
