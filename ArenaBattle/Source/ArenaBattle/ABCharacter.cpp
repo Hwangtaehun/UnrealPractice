@@ -100,10 +100,14 @@ void AABCharacter::Tick(float DeltaTime)
 void AABCharacter::PostInitializeComponents()
 {
 	Super::PostInitializeComponents();
-	auto AnimInstance= Cast<UABAnimInstance>(GetMesh()->GetAnimInstance());
+	/*auto AnimInstance= Cast<UABAnimInstance>(GetMesh()->GetAnimInstance());
 	ABCHECK(nullptr != AnimInstance);
 
-	AnimInstance->OnMontageEnded.AddDynamic(this, &AABCharacter::OnAttackMontageEnded);
+	AnimInstance->OnMontageEnded.AddDynamic(this, &AABCharacter::OnAttackMontageEnded);*/
+	ABAnim = Cast<UABAnimInstance>(GetMesh()->GetAnimInstance());
+	ABCHECK(nullptr != ABAnim);
+
+	ABAnim->OnMontageEnded.AddDynamic(this, &AABCharacter::OnAttackMontageEnded);
 }
 
 // Called to bind functionality to input
@@ -187,11 +191,12 @@ void AABCharacter::Attack()
 	if (IsAttacking)
 		return;
 	//ABLOG_S(Warning);
-	auto AnimInstance = Cast<UABAnimInstance>(GetMesh()->GetAnimInstance());
+	/*auto AnimInstance = Cast<UABAnimInstance>(GetMesh()->GetAnimInstance());
 	if (nullptr == AnimInstance)
 		return;
 
-	AnimInstance->PlayAttackMontage();
+	AnimInstance->PlayAttackMontage();*/
+	ABAnim->PlayAttackMontage();
 	IsAttacking = true;
 }
 

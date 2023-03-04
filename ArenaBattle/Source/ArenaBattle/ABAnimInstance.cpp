@@ -32,8 +32,15 @@ void UABAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 
 void UABAnimInstance::PlayAttackMontage()
 {
-	if (!Montage_IsPlaying(AttackMontage))
+	//델리게이트에 의해 공격의 시작과 종료가 감지한다.
+	/*if (!Montage_IsPlaying(AttackMontage))
 	{
 		Montage_Play(AttackMontage, 1.0f);
-	}
+	}*/
+	Montage_Play(AttackMontage, 1.0f);
+}
+
+void UABAnimInstance::AnimNotify_AttackHitCheck()
+{
+	ABLOG_S(Warning);
 }

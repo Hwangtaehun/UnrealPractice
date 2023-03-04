@@ -68,7 +68,8 @@ public: \
 
 
 #define ArenaBattle_Source_ArenaBattle_ABCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__IsAttacking() { return STRUCT_OFFSET(AABCharacter, IsAttacking); }
+	FORCEINLINE static uint32 __PPO__IsAttacking() { return STRUCT_OFFSET(AABCharacter, IsAttacking); } \
+	FORCEINLINE static uint32 __PPO__ABAnim() { return STRUCT_OFFSET(AABCharacter, ABAnim); }
 
 
 #define ArenaBattle_Source_ArenaBattle_ABCharacter_h_9_PROLOG
