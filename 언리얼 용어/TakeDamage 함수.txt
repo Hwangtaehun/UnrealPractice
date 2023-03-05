@@ -1,0 +1,4 @@
+DamageAmout: 전달할 대미지의 세기
+DamageEvent: 대미지 종류
+EventInstigator: 공격 명령을 내린 가해자
+DamageCauser: 대미지 전달을 위해 사용한 도구
