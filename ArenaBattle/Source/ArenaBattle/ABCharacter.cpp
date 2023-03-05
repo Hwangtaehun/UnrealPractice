@@ -36,7 +36,6 @@ AABCharacter::AABCharacter()
 	SetControlMode(EControlMode::DIABLO);
 	GetCharacterMovement()->JumpZVelocity = 800.0f;
 	IsAttacking = false;
-
 	MaxCombo = 4;
 	AttackEndComboState();
 }
@@ -112,8 +111,8 @@ void AABCharacter::PostInitializeComponents()
 
 	ABAnim->OnMontageEnded.AddDynamic(this, &AABCharacter::OnAttackMontageEnded);
 
-	ABAnim->OnNextAttackCheck.AddLambda([this]()-> void {
-		ABLOG(Warning, TEXT("OnNExtAttackCheck"));
+	ABAnim->OnNextAttackCheck.AddLambda([this]() -> void {
+		ABLOG(Warning, TEXT("OnNextAttackCheck"));
 		CanNextCombo = false;
 		if (IsComboInputOn)
 		{
@@ -212,7 +211,8 @@ void AABCharacter::Attack()
 	//ABAnim->PlayAttackMontage();
 	//IsAttacking = true;
 
-	if (IsAttacking) {
+	if (IsAttacking)
+	{
 		ABCHECK(FMath::IsWithinInclusive<int32>(CurrentCombo, 1, MaxCombo));
 		if (CanNextCombo)
 		{

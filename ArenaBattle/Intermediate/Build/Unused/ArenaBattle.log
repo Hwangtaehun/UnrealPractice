@@ -2,11 +2,11 @@
   Building ArenaBattleEditor...
   Using Visual Studio 2019 14.29.30148 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 16 processes...
-    [1/4] ABCharacter.cpp
-    [2/4] UE4Editor-ArenaBattle-0016.lib
-       D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0016.lib 라이브러리 및 D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0016.exp 개체를 생성하고 있습니다.
-    [3/4] UE4Editor-ArenaBattle-0016.dll
-       D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0016.suppressed.lib 라이브러리 및 D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0016.suppressed.exp 개체를 생성하고 있습니다.
+    [1/4] ABAnimInstance.cpp
+    [2/4] UE4Editor-ArenaBattle-0034.lib
+       D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0034.lib 라이브러리 및 D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0034.exp 개체를 생성하고 있습니다.
+    [3/4] UE4Editor-ArenaBattle-0034.dll
+       D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0034.suppressed.lib 라이브러리 및 D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0034.suppressed.exp 개체를 생성하고 있습니다.
     [4/4] ArenaBattleEditor.target
-  Total time in Parallel executor: 3.11 seconds
-  Total execution time: 4.11 seconds
+  Total time in Parallel executor: 3.21 seconds
+  Total execution time: 4.21 seconds
