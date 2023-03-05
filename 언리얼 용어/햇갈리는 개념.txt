@@ -23,3 +23,8 @@ Roll: 정면을 기준으로 돌아가는 회전-> 언리얼 엔진에서 X축 �
 InterpTo 명령어
 지정한 속력으로 목표 지점까지 진행하되, 목표 지점까지 도달하면 그 값에서 멈추는 기능이다.
 언리얼 엔진은 float형을 처리하는 FInterpTo, Vector형을 처리하는 VInterpTo, Rotator형을 처리하는 RInterpTo라는 세 가지 함수를 FMath에서 제공
+
+액터의 컴포넌트에서 시각적인 기능을 끄고자 할 때 사용하는 함수로 SetVisibility와 SetHiddenInGame이 있다.
+SetVisibility는 해당 컴포넌트의 시각적인 기능을 아예 없애는 함수다.
+Visibility 옵션을 끈 컴포넌트는 에디터 화면과 게임플레이 화면에서 모두 사라진다. 
+하지만 HiddenInGame 옵션은 에디터 레벨 작업을 할 때는 보여주되, 게임플레이 중에 사라진다.
