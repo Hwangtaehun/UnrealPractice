@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeArenaBattle_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xDF369FF5,
+				0xB0BBE4B1,
 				0xDA7565CA,
 				METADATA_PARAMS(nullptr, 0)
 			};
