@@ -45,7 +45,6 @@ AABItemBox::AABItemBox()
 void AABItemBox::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 void AABItemBox::PostInitializeComponents()
