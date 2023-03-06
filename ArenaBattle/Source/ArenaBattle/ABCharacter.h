@@ -21,13 +21,18 @@ protected:
 
 	enum class EControlMode
 	{
-		GTA,
-		DIABLO
-	};
+		Shoulder,
+		Quarter,
+	};//Shoulder = GTA, Quarter = DIABLO
 
 	void SetControlMode(EControlMode NewControlMode);
-	EControlMode CurrentControlMode = EControlMode::GTA;
+	EControlMode CurrentControlMode = EControlMode::Shoulder;
 	FVector DirectionToMove = FVector::ZeroVector;
+
+	float ArmLengthTo = 0.0f;
+	FRotator ArmRotationTo = FRotator::ZeroRotator;
+	float ArmLengthSpeed = 0.0f;
+	float ArmRotationSpeed = 0.0f;
 
 public:
 	// Called every frame
@@ -76,7 +81,7 @@ private:
 	void AttackCheck();
 
 private:
-	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, category = Attack, Meta = (AllowPrivateAccess = true))
 		bool IsAttacking;
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
@@ -91,12 +96,12 @@ private:
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 		int32 MaxCombo;
 
-	UPROPERTY()
-		class UABAnimInstance* ABAnim;
-
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 		float AttackRange;
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 		float AttackRadius;
+
+	UPROPERTY()
+		class UABAnimInstance* ABAnim;
 };

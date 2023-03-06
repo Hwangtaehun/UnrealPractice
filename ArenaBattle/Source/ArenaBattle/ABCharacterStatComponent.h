@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "ArenaBattle.h"
 #include "Components/ActorComponent.h"
 #include "ABCharacterStatComponent.generated.h"
 
@@ -37,9 +37,8 @@ private:
 	struct FABCharacterData* CurrentStatData = nullptr;
 
 	UPROPERTY(EditInstanceOnly, Category = Stat, Meta = (AllowPrivateAccess = true))
-		int Level;
+		int32 Level;
 
-	UPROPERTY(Transient, VisibleInstanceOnly, Category = Stat, Meta = (AllowPirvateAccess = true))
+	UPROPERTY(Transient, VisibleInstanceOnly, Category = Stat, Meta = (AllowPrivateAccess = true))
 		float CurrentHP;
-
 };

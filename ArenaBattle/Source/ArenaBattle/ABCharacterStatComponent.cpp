@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+
 #include "ABCharacterStatComponent.h"
 #include "ABGameInstance.h"
-
 
 // Sets default values for this component's properties
 UABCharacterStatComponent::UABCharacterStatComponent()
@@ -15,11 +15,13 @@ UABCharacterStatComponent::UABCharacterStatComponent()
 	Level = 1;
 }
 
+
 // Called when the game starts
 void UABCharacterStatComponent::BeginPlay()
 {
 	Super::BeginPlay();
 }
+
 
 void UABCharacterStatComponent::InitializeComponent()
 {
@@ -78,4 +80,5 @@ float UABCharacterStatComponent::GetHPRatio()
 	ABCHECK(nullptr != CurrentStatData, 0.0f);
 
 	return (CurrentStatData->MaxHP < KINDA_SMALL_NUMBER) ? 0.0f : (CurrentHP / CurrentStatData->MaxHP);
+
 }
