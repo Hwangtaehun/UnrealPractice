@@ -34,7 +34,7 @@ void EmptyLinkFunctionForGeneratedCodeABCharacterStatComponent() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Level_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_Level;
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_Level;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentHP_MetaData[];
 #endif
@@ -62,10 +62,10 @@ void EmptyLinkFunctionForGeneratedCodeABCharacterStatComponent() {}
 		{ "ModuleRelativePath", "ABCharacterStatComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UABCharacterStatComponent_Statics::NewProp_Level = { "Level", nullptr, (EPropertyFlags)0x0040000000000801, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UABCharacterStatComponent, Level), METADATA_PARAMS(Z_Construct_UClass_UABCharacterStatComponent_Statics::NewProp_Level_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UABCharacterStatComponent_Statics::NewProp_Level_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_UABCharacterStatComponent_Statics::NewProp_Level = { "Level", nullptr, (EPropertyFlags)0x0040000000000801, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UABCharacterStatComponent, Level), METADATA_PARAMS(Z_Construct_UClass_UABCharacterStatComponent_Statics::NewProp_Level_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UABCharacterStatComponent_Statics::NewProp_Level_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UABCharacterStatComponent_Statics::NewProp_CurrentHP_MetaData[] = {
-		{ "AllowPrivateAccess", "TRUE" },
+		{ "AllowPirvateAccess", "TRUE" },
 		{ "Category", "Stat" },
 		{ "ModuleRelativePath", "ABCharacterStatComponent.h" },
 	};
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeABCharacterStatComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UABCharacterStatComponent, 42295559);
+	IMPLEMENT_CLASS(UABCharacterStatComponent, 2730755687);
 	template<> ARENABATTLE_API UClass* StaticClass<UABCharacterStatComponent>()
 	{
 		return UABCharacterStatComponent::StaticClass();

@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "ABCharacterStatComponent.h"
 #include "ABGameInstance.h"
+
 
 // Sets default values for this component's properties
 UABCharacterStatComponent::UABCharacterStatComponent()
@@ -14,7 +14,6 @@ UABCharacterStatComponent::UABCharacterStatComponent()
 
 	Level = 1;
 }
-
 
 // Called when the game starts
 void UABCharacterStatComponent::BeginPlay()
@@ -37,7 +36,8 @@ void UABCharacterStatComponent::SetNewLevel(int32 NewLevel)
 	if (nullptr != CurrentStatData)
 	{
 		Level = NewLevel;
-		CurrentHP = CurrentStatData->MaxHP;
+		//CurrentHP = CurrentStatData->MaxHP;
+		SetHP(CurrentStatData->MaxHP);
 	}
 	else
 	{
@@ -48,9 +48,21 @@ void UABCharacterStatComponent::SetNewLevel(int32 NewLevel)
 void UABCharacterStatComponent::SetDamage(float NewDamage)
 {
 	ABCHECK(nullptr != CurrentStatData);
-	CurrentHP = FMath::Clamp<float>(CurrentHP - NewDamage, 0.0f, CurrentStatData->MaxHP);
+	/*CurrentHP = FMath::Clamp<float>(CurrentHP - NewDamage, 0.0f, CurrentStatData->MaxHP);
 	if (CurrentHP <= 0.0f)
 	{
+		OnHPIsZero.Broadcast();
+	}*/
+	SetHP(FMath::Clamp<float>(CurrentHP - NewDamage, 0.0f, CurrentStatData->MaxHP));
+}
+
+void UABCharacterStatComponent::SetHP(float NewHP)
+{
+	CurrentHP = NewHP;
+	OnHPChanged.Broadcast();
+	if (CurrentHP < KINDA_SMALL_NUMBER)
+	{
+		CurrentHP = 0.0f;
 		OnHPIsZero.Broadcast();
 	}
 }
@@ -59,4 +71,11 @@ float UABCharacterStatComponent::GetAttack()
 {
 	ABCHECK(nullptr != CurrentStatData, 0.0f);
 	return CurrentStatData->Attack;
+}
+
+float UABCharacterStatComponent::GetHPRatio()
+{
+	ABCHECK(nullptr != CurrentStatData, 0.0f);
+
+	return (CurrentStatData->MaxHP < KINDA_SMALL_NUMBER) ? 0.0f : (CurrentHP / CurrentStatData->MaxHP);
 }
