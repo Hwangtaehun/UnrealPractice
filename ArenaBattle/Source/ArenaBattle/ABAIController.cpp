@@ -4,8 +4,13 @@
 #include "ABAIController.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "BehaviorTree/BlackboardData.h"
+#include "BehaviorTree/BlackboardComponent.h"
 //#include "NavigationSystem.h"
 //#include "Blueprint/AIBlueprintHelperLibrary.h"
+
+const FName AABAIController::HomePosKey(TEXT("HomePos"));
+const FName AABAIController::PatrolPosKey(TEXT("PatrolPos"));
+const FName AABAIController::TargetKey(TEXT("Target"));
 
 AABAIController::AABAIController()
 {
@@ -29,6 +34,7 @@ void AABAIController::OnPossess(APawn* InPawn)
 	//GetWorld()->GetTimerManager().SetTimer(RepeatTimerHandle, this, &AABAIController::OnRepeatTimer, RepeatInterval, true);
 	if (UseBlackboard(BBAsset, Blackboard))
 	{
+		Blackboard->SetValueAsVector(HomePosKey, InPawn->GetActorLocation());
 		if (!RunBehaviorTree(BTAsset))
 		{
 			ABLOG(Error, TEXT("AIController couldn't run behavior tree!"));
