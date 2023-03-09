@@ -33,13 +33,14 @@
 /wd4838
 /I .
 /I D:\Github\UnrealPractice\ArenaBattle\Source\ArenaBattleSetting\Private
-/I D:\Github\UnrealPractice\ArenaBattle\Source
-/I D:\Github\UnrealPractice\ArenaBattle\Source\ArenaBattleSetting\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime
+/I Runtime\CoreUObject\Public
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
-/I Runtime\CoreUObject\Public
+/I D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattleSetting
+/I D:\Github\UnrealPractice\ArenaBattle\Source
+/I D:\Github\UnrealPractice\ArenaBattle\Source\ArenaBattleSetting\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
