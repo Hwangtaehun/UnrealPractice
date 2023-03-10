@@ -23,13 +23,13 @@ protected:
 
 	enum class EControlMode
 	{
-		Shoulder,
-		Quarter,
+		GTA,
+		DIABLO,
 		NPC
-	};//Shoulder = GTA, Quarter = DIABLO
+	};
 
 	void SetControlMode(EControlMode NewControlMode);
-	EControlMode CurrentControlMode = EControlMode::Shoulder;
+	EControlMode CurrentControlMode = EControlMode::GTA;
 	FVector DirectionToMove = FVector::ZeroVector;
 
 	float ArmLengthTo = 0.0f;
@@ -41,7 +41,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	virtual void PostInitializeComponents() override;
-	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController*, AActor* DamageCauser) override;
 	virtual void PossessedBy(AController* NewController) override;
 
 	// Called to bind functionality to input
@@ -49,15 +49,17 @@ public:
 
 	bool CanSetWeapon();
 	void SetWeapon(class AABWeapon* NewWeapon);
+	void Attack();
+	FOnAttackEndDelegate OnAttackEnd;
 
 	UPROPERTY(VisibleAnywhere, Category = Weapon)
 		class AABWeapon* CurrentWeapon;
 
-	/*UPROPERTY(VisibleAnywhere, Category = Weapon)
-		USkeletalMeshComponent* Weapon;*/
-
 	UPROPERTY(VisibleAnywhere, Category = Stat)
 		class UABCharacterStatComponent* CharacterStat;
+
+	UPROPERTY(VisibleAnywhere, Category = Weapon)
+		USkeletalMeshComponent* Weapon;
 
 	UPROPERTY(VisibleAnywhere, Category = Camera)
 		USpringArmComponent* SpringArm;
@@ -67,9 +69,6 @@ public:
 
 	UPROPERTY(VisibleAnywhere, Category = UI)
 		class UWidgetComponent* HPBarWidget;
-
-	void Attack();
-	FOnAttackEndDelegate OnAttackEnd;
 
 private:
 	void UpDown(float NewAxisValue);
@@ -85,10 +84,13 @@ private:
 	void AttackStartComboState();
 	void AttackEndComboState();
 	void AttackCheck();
+
 	void OnAssetLoadCompleted();
 
+	void OnDestroyDeadNPC();
+
 private:
-	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, category = Attack, Meta = (AllowPrivateAccess = true))
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 		bool IsAttacking;
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
@@ -111,7 +113,12 @@ private:
 
 	UPROPERTY()
 		class UABAnimInstance* ABAnim;
-	
+
 	FSoftObjectPath CharacterAssetToLoad = FSoftObjectPath(nullptr);
 	TSharedPtr<struct FStreamableHandle> AssetStreamingHandle;
+
+	FTimerHandle DestoryNPCTimerHandle = { };
+
+	UPROPERTY(EditAnywhere, Category = Destroy, Meta = (AllowPrivateAccess = true))
+		float EnemyDestroyTime;
 };
