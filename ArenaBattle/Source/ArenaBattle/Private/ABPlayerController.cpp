@@ -1,6 +1,16 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "ABPlayerController.h"
+#include "ABHUDWidget.h"
+
+AABPlayerController::AABPlayerController()
+{
+	static ConstructorHelpers::FClassFinder<UABHUDWidget>UI_HUD_C(TEXT("/Game/Book/UI/UI_HUD.UI_HUD_C"));
+	if (UI_HUD_C.Succeeded())
+	{
+		HUDWidgetClass = UI_HUD_C.Class;
+	}
+}
 
 void AABPlayerController::PostInitializeComponents()
 {
@@ -8,7 +18,7 @@ void AABPlayerController::PostInitializeComponents()
 	ABLOG_S(Warning);
 }
 
-//void AABPlayerController::Possess(APawn* aPawn)
+//void AABPlayerController::OnPossess(APawn* aPawn)
 //{
 //	ABLOG_S(Warning);
 //	Super::Possess(aPawn);
@@ -20,4 +30,12 @@ void AABPlayerController::BeginPlay()
 
 	FInputModeGameOnly InputMode;
 	SetInputMode(InputMode);
+
+	HUDWidget = CreateWidget<UABHUDWidget>(this, HUDWidgetClass);
+	HUDWidget->AddToViewport();
+}
+
+UABHUDWidget* AABPlayerController::GetHUDWidget() const
+{
+	return HUDWidget;
 }
