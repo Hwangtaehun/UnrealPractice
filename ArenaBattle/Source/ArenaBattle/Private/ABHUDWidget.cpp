@@ -48,6 +48,7 @@ void UABHUDWidget::UpdateCharacterStat()
 	ABCHECK(CurrentCharacterStat.IsValid());
 
 	HPBar->SetPercent(CurrentCharacterStat->GetHPRatio());
+	HighScore->SetText(FText::FromString(FString::FromInt(CurrentPlayerState->GetGameHighScore())));
 }
 
 void UABHUDWidget::UpdatePlayerState()

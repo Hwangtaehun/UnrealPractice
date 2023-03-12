@@ -204,3 +204,7 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\DataTabl
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DataTable.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/StreamableManager.h
 D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABGameInstance.generated.h
+D:\Github\UnrealPractice\ArenaBattle\Source\ArenaBattle\Public\ABSaveGame.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SaveGame.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SaveGame.generated.h
+D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABSaveGame.generated.h

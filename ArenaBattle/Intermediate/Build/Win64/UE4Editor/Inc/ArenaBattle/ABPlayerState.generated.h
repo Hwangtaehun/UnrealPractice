@@ -60,6 +60,7 @@ public: \
 
 #define ArenaBattle_Source_ArenaBattle_Public_ABPlayerState_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__GameScore() { return STRUCT_OFFSET(AABPlayerState, GameScore); } \
+	FORCEINLINE static uint32 __PPO__GameHighScore() { return STRUCT_OFFSET(AABPlayerState, GameHighScore); } \
 	FORCEINLINE static uint32 __PPO__CharacterLevel() { return STRUCT_OFFSET(AABPlayerState, CharacterLevel); } \
 	FORCEINLINE static uint32 __PPO__Exp() { return STRUCT_OFFSET(AABPlayerState, Exp); }
 
