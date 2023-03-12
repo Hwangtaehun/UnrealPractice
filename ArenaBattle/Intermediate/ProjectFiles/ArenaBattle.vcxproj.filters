@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ArenaBattle.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{777E09F6-9D17-492B-B93A-044948640BE3}</UniqueIdentifier>
+      <UniqueIdentifier>{59997CC6-1159-41A6-B058-AD760DBE0A3E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ArenaBattle.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{FD7B037A-0BF2-4B63-99BD-FDCCEA5823E7}</UniqueIdentifier>
+      <UniqueIdentifier>{1D875082-390E-4472-BAA7-5DE30A3C5E7B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultArenaBattle.ini">
       <Filter>Config</Filter>
@@ -33,13 +33,13 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ArenaBattle">
-      <UniqueIdentifier>{86437A13-A027-41B8-99D0-F5544639EC5F}</UniqueIdentifier>
+      <UniqueIdentifier>{237D774F-7AC2-41CA-BC24-8972C7D91024}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ArenaBattle\ArenaBattle.Build.cs">
       <Filter>Source\ArenaBattle</Filter>
     </None>
     <Filter Include="Source\ArenaBattle\Private">
-      <UniqueIdentifier>{E61A43B1-572C-4498-8C20-2D95D75DD63D}</UniqueIdentifier>
+      <UniqueIdentifier>{5F415574-9149-420B-8852-4EFCE372F367}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ArenaBattle\Private\ABAIController.cpp">
       <Filter>Source\ArenaBattle\Private</Filter>
@@ -60,6 +60,9 @@
       <Filter>Source\ArenaBattle\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\ArenaBattle\Private\ABGameMode.cpp">
+      <Filter>Source\ArenaBattle\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ArenaBattle\Private\ABGameState.cpp">
       <Filter>Source\ArenaBattle\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\ArenaBattle\Private\ABHUDWidget.cpp">
@@ -102,7 +105,7 @@
       <Filter>Source\ArenaBattle\Private</Filter>
     </ClCompile>
     <Filter Include="Source\ArenaBattle\Public">
-      <UniqueIdentifier>{5C5C8835-E09B-4E69-AE83-4D30C40ED926}</UniqueIdentifier>
+      <UniqueIdentifier>{46ABFD0C-3CEC-4B74-A9E4-D63FCF8638FA}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\ArenaBattle\Public\ABAIController.h">
       <Filter>Source\ArenaBattle\Public</Filter>
@@ -123,6 +126,9 @@
       <Filter>Source\ArenaBattle\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\ArenaBattle\Public\ABGameMode.h">
+      <Filter>Source\ArenaBattle\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ArenaBattle\Public\ABGameState.h">
       <Filter>Source\ArenaBattle\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\ArenaBattle\Public\ABHUDWidget.h">
@@ -165,13 +171,13 @@
       <Filter>Source\ArenaBattle\Public</Filter>
     </ClInclude>
     <Filter Include="Source\ArenaBattleSetting">
-      <UniqueIdentifier>{7403E5F1-C1D9-418B-9166-18BA534AE6E7}</UniqueIdentifier>
+      <UniqueIdentifier>{6867958B-C5B5-4B57-9083-E7EDFBD9BA97}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ArenaBattleSetting\ArenaBattleSetting.Build.cs">
       <Filter>Source\ArenaBattleSetting</Filter>
     </None>
     <Filter Include="Source\ArenaBattleSetting\Private">
-      <UniqueIdentifier>{05F91CCF-6014-4D48-9788-188F1A3D6808}</UniqueIdentifier>
+      <UniqueIdentifier>{6C0FB098-12D1-4692-855B-354DC9F30A1E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ArenaBattleSetting\Private\ABCharacterSetting.cpp">
       <Filter>Source\ArenaBattleSetting\Private</Filter>
@@ -180,7 +186,7 @@
       <Filter>Source\ArenaBattleSetting\Private</Filter>
     </ClCompile>
     <Filter Include="Source\ArenaBattleSetting\Public">
-      <UniqueIdentifier>{84A4DDA0-7D3B-4E28-8CDE-119105E0C557}</UniqueIdentifier>
+      <UniqueIdentifier>{22916E19-0BCD-460A-B4E7-C3BFC9480B5F}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\ArenaBattleSetting\Public\ABCharacterSetting.h">
       <Filter>Source\ArenaBattleSetting\Public</Filter>

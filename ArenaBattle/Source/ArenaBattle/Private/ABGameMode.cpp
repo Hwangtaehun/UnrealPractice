@@ -5,6 +5,7 @@
 #include "ABCharacter.h"
 #include "ABPlayerController.h"
 #include "ABPlayerState.h"
+#include "ABGameState.h"
 
 AABGameMode::AABGameMode()
 {
@@ -12,6 +13,7 @@ AABGameMode::AABGameMode()
 	DefaultPawnClass = AABCharacter::StaticClass();
 	PlayerControllerClass = AABPlayerController::StaticClass();
 	PlayerStateClass = AABPlayerState::StaticClass();
+	GameStateClass = AABGameState::StaticClass();
 
 	//폰 클래스 사용
 	/*DefaultPawnClass = AABPawn::StaticClass();*/
@@ -20,6 +22,12 @@ AABGameMode::AABGameMode()
 	{
 		DefaultPawnClass = BP_PAWN_C.Class;
 	}*/
+}
+
+void AABGameMode::PostInitializeComponents()
+{
+	Super::PostInitializeComponents();
+	ABGameState = Cast<AABGameState>(GameState);
 }
 
 void AABGameMode::PostLogin(APlayerController* NewPlayer)
@@ -36,4 +44,18 @@ void AABGameMode::PostLogin(APlayerController* NewPlayer)
 	auto ABPlayerState = Cast<AABPlayerState>(NewPlayer->PlayerState);
 	ABCHECK(nullptr != ABPlayerState);
 	ABPlayerState->InitPlayerData();
+}
+
+void AABGameMode::AddScore(AABPlayerController* ScoredPlayer)
+{
+	for (FConstPlayerControllerIterator It = GetWorld()->GetPlayerControllerIterator(); It; ++It)
+	{
+		const auto ABPlayerController = Cast<AABPlayerController>(It->Get());
+		if ((nullptr != ABPlayerController) && (ScoredPlayer == ABPlayerController))
+		{
+			ABPlayerController->AddGameScore();
+			break;
+		}
+	}
+	ABGameState->AddGameScore();
 }
