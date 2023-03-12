@@ -6,7 +6,7 @@
 // Sets default values
 AABWeapon::AABWeapon()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 
 	Weapon = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("WEAPON"));
@@ -19,6 +19,27 @@ AABWeapon::AABWeapon()
 	}
 
 	Weapon->SetCollisionProfileName(TEXT("NoCollision"));
+
+	AttackRange = 150.0f;
+	AttackDamgageMin = -2.5f;
+	AttackDamgageMax = 10.0f;
+	AttackModifierMin = 0.85f;
+	AttackModifierMax = 1.25f;
+}
+
+float AABWeapon::GetAttackRange() const
+{
+	return AttackRange;
+}
+
+float AABWeapon::GetAttackDamage() const
+{
+	return AttackModifier;
+}
+
+float AABWeapon::GetAttackModifier() const
+{
+	return AttackModifier;
 }
 
 // Called when the game starts or when spawned
@@ -26,6 +47,9 @@ void AABWeapon::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	AttackDamage = FMath::RandRange(AttackDamgageMin, AttackDamgageMax);
+	AttackModifier = FMath::RandRange(AttackModifierMin, AttackModifierMax);
+	ABLOG(Warning, TEXT("Weapon Damage : %f, Modifier :%f"), AttackDamage, AttackModifier);
 }
 
 // Called every frame

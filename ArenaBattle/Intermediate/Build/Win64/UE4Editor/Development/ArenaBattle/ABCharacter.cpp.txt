@@ -360,3 +360,5 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABPlayerState.generated.h
 D:\Github\UnrealPractice\ArenaBattle\Source\ArenaBattle\Public\ABHUDWidget.h
 D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABHUDWidget.generated.h
+D:\Github\UnrealPractice\ArenaBattle\Source\ArenaBattle\Public\ABGameMode.h
+D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABGameMode.generated.h
