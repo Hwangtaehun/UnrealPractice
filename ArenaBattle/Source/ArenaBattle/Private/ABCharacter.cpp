@@ -13,6 +13,7 @@
 #include "ABGameInstance.h"
 #include "ABPlayerController.h"
 #include "ABPlayerState.h"
+#include "ABHUDWidget.h"
 
 // Sets default values
 AABCharacter::AABCharacter()
@@ -169,6 +170,8 @@ void AABCharacter::SetCharacterState(ECharacterState NewState)
 		{
 			DisableInput(ABPlayerController);
 
+			ABPlayerController->GetHUDWidget()->BindCharacterStat(CharacterStat);
+
 			auto ABPlayerState = Cast<AABPlayerState>(GetPlayerState());
 			ABCHECK(nullptr != ABPlayerState);
 			CharacterStat->SetNewLevel(ABPlayerState->GetCharacterLevel());
@@ -242,6 +245,11 @@ void AABCharacter::SetCharacterState(ECharacterState NewState)
 ECharacterState AABCharacter::GetCharacterState() const
 {
 	return CurrentState;
+}
+
+int32 AABCharacter::GetExp() const
+{
+	return CharacterStat->GetDropExp();
 }
 
 bool AABCharacter::CanSetWeapon()
@@ -568,6 +576,15 @@ float AABCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEve
 	//}
 
 	CharacterStat->SetDamage(FinalDamage);
+	if (CurrentState == ECharacterState::DEAD)
+	{
+		if (EventInstigator->IsPlayerController())
+		{
+			auto PlayerController = Cast<AABPlayerController>(EventInstigator);
+			ABCHECK(nullptr != PlayerController, 0.0f);
+			PlayerController->NPCKill(this);
+		}
+	}
 
 	return FinalDamage;
 }

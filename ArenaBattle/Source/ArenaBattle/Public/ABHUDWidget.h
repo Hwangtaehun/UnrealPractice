@@ -25,7 +25,7 @@ protected:
 
 private:
 	TWeakObjectPtr<class UABCharacterStatComponent> CurrentCharacterStat;
-	TWeakObjectPtr<class UAABPlayerState> CurrentPalyerState;
+	TWeakObjectPtr<class AABPlayerState> CurrentPlayerState;
 
 	UPROPERTY()
 		class UProgressBar* HPBar;
