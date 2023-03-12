@@ -42,7 +42,7 @@ void UABAnimInstance::PlayAttackMontage()
 		Montage_Play(AttackMontage, 1.0f);
 	}*/
 	ABCHECK(!IsDead);
-	Montage_Play(AttackMontage, 0.6f);
+	Montage_Play(AttackMontage, 1.0f);
 }
 
 void UABAnimInstance::JumpToAttackMontageSection(int32 NewSection)
