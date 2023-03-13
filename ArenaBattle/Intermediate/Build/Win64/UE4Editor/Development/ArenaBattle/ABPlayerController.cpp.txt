@@ -301,3 +301,11 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABPlayerState.generated.h
 D:\Github\UnrealPractice\ArenaBattle\Source\ArenaBattle\Public\ABCharacter.h
 D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABCharacter.generated.h
+D:\Github\UnrealPractice\ArenaBattle\Source\ArenaBattle\Public\ABGameplayWidget.h
+D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABGameplayWidget.generated.h
+D:\Github\UnrealPractice\ArenaBattle\Source\ArenaBattle\Public\ABGameplayResultWidget.h
+D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABGameplayResultWidget.generated.h
+D:\Github\UnrealPractice\ArenaBattle\Source\ArenaBattle\Public\ABGameState.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameStateBase.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameStateBase.generated.h
+D:\Github\UnrealPractice\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABGameState.generated.h

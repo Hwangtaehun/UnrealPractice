@@ -233,7 +233,8 @@ void AABCharacter::SetCharacterState(ECharacterState NewState)
 
 		if (bIsPlayer)
 		{
-			DisableInput(ABPlayerController);
+			/*DisableInput(ABPlayerController);*/
+			ABPlayerController->ShowResultUI();
 		}
 		else
 		{
