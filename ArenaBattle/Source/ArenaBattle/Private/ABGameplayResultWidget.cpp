@@ -23,4 +23,5 @@ void UABGameplayResultWidget::NativeConstruct()
 
 	auto TotalScore = Cast<UTextBlock>(GetWidgetFromName(TEXT("txtTotalScore")));
 	ABCHECK(nullptr != TotalScore);
+	TotalScore->SetText(FText::FromString(FString::FromInt(CurrentGameState->GetTotalGameScore())));
 }
